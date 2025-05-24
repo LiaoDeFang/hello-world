@@ -1,0 +1,405 @@
+[
+  {
+    "name": "TW50KD多空家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50KD%E5%A4%9A%E7%A9%BA%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成分股內，目前K > D的家數。KD指標計算參數為：資料期數為9，K值平滑期數為3，D值平滑期數為3。使用1分鐘資料來做計算。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50KD多空家數\");\nValue1 = GetField(\"TW50KDLongShortSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成分股內，目前K > D的家數。\nKD指標計算參數為：資料期數為9，K值平滑期數為3，D值平滑期數為3。使用1分鐘資料來做計算。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50KD多空家數\");"
+  },
+  {
+    "name": "TW50MTM多空家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50MTM%E5%A4%9A%E7%A9%BA%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成分股內，Momentum(10) > 0的家數。 Momentum(N)的公式 = 最近1分鐘的Close - N分鐘前的Close，也就是說這個欄位是最近1分鐘較10分鐘前上漲的家數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50MTM多空家數\");\nValue1 = GetField(\"TW50MTMLongShortSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成分股內，Momentum(10) > 0的家數。\nMomentum(N)的公式 = 最近1分鐘的Close - N分鐘前的Close。也就是說這個欄位是最近1分鐘較10分鐘前上漲的家數。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50MTM多空家數\");"
+  },
+  {
+    "name": "TW50上昇趨勢家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E4%B8%8A%E6%98%87%E8%B6%A8%E5%8B%A2%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成份股內趨勢向上的家數。趨勢向上的定義是計算近6分鐘(含目前這一分鐘)的線性回歸線(LinearRegression)是否向上。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50上昇趨勢家數\");\nValue1 = GetField(\"TW50UpTrendSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成份股內趨勢向上的家數。\n趨勢向上的定義是計算近6分鐘(含目前這一分鐘)的線性回歸線(LinearRegression)是否向上。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50上昇趨勢家數\");"
+  },
+  {
+    "name": "TW50大戶買賣力",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%A4%A7%E6%88%B6%E8%B2%B7%E8%B3%A3%E5%8A%9B&group=TMARKET",
+    "head_description": "回傳台灣50成分股每檔商品當根K棒的大戶買賣力金額。大戶買賣力的定義是買進的(大單+特大單)金額 - 賣出的(大單+特大單)金額。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50大戶買賣力\");\nValue1 = GetField(\"TW50BigSharesBidAskPower\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "回傳台灣50成分股每檔商品當根K棒的大戶買賣力金額。大戶買賣力的定義是買進的(大單+特大單)金額 - 賣出的(大單+特大單)金額。僅支援TSE50.SJ 商品。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50大戶買賣力\");"
+  },
+  {
+    "name": "TW50大單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%A4%A7%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TMARKET",
+    "head_description": "加總台灣50成分股每檔商品最近10分鐘的買進大單+買進特大單的平均次數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50大單成交次數\");\nValue1 = GetField(\"TW50BidTickCountXL\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "加總台灣50成分股每檔商品最近10分鐘的買進大單+買進特大單的平均次數。僅支援TSE50.SJ 商品。統計的方式不跨日，所以開盤未滿10分鐘前則依照開盤的分鐘數來平均。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50大單成交次數\");"
+  },
+  {
+    "name": "TW50大單買進金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%A4%A7%E5%96%AE%E8%B2%B7%E9%80%B2%E9%87%91%E9%A1%8D&group=TMARKET",
+    "head_description": "加總台灣50成分股每檔商品的分鐘買進大單+買進特大單的金額。分鐘買進金額為開盤迄今最近10分鐘的分鐘均量。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50大單買進金額\");\nValue1 = GetField(\"TW50BidVolumePriceXLTrend\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "加總台灣50成分股每檔商品的分鐘買進大單+買進特大單的金額。分鐘買進金額為開盤迄今最近10分鐘的分鐘均量。僅支援TSE50.SJ 商品。統計的方式不跨日，所以開盤未滿10分鐘前則依照開盤的分鐘數來平均。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50大單買進金額\");"
+  },
+  {
+    "name": "TW50均線多空家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%9D%87%E7%B7%9A%E5%A4%9A%E7%A9%BA%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成分股內，目前收盤價大於前10分鐘均價的家數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50均線多空家數\");\nValue1 = GetField(\"TW50MALongShortSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成分股內，目前收盤價大於前10分鐘均價的家數。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50均線多空家數\");"
+  },
+  {
+    "name": "TW50紅K家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E7%B4%85K%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成分股內，目前這1分鐘是紅K棒的家數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50紅K家數\");\nValue1 = GetField(\"TW50BullKSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成分股內，目前這1分鐘是紅K棒的家數。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50紅K家數\");"
+  },
+  {
+    "name": "TW50創新低家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%89%B5%E6%96%B0%E4%BD%8E%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成分股，目前這1分鐘的最低價小於最近20分鐘最低價的家數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50創新低家數\");\nValue1 = GetField(\"TW50NewLowSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成分股，目前這1分鐘的最低價小於最近20分鐘最低價的家數。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50創新低家數\");"
+  },
+  {
+    "name": "TW50創新高家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%89%B5%E6%96%B0%E9%AB%98%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成分股，目前這1分鐘的最高價大於最近20分鐘最高價的家數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50創新高家數\");\nValue1 = GetField(\"TW50NewHighSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成分股，目前這1分鐘的最高價大於最近20分鐘最高價的家數。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50創新高家數\");"
+  },
+  {
+    "name": "TW50價格上漲家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=TW50%E5%83%B9%E6%A0%BC%E4%B8%8A%E6%BC%B2%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "統計台灣50成份股內，目前這一分鐘收盤價大於前一分鐘收盤價的家數。僅支援TSE50.SJ 商品。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"TW50價格上漲家數\");\nValue1 = GetField(\"TW50PriceUpSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "統計台灣50成份股內，目前這一分鐘收盤價大於前一分鐘收盤價的家數。僅支援TSE50.SJ 商品。系統每分鐘會統計符合的家數，而腳本端則依照執行頻率(支援分鐘/日頻率)來取得當分鐘最後的符合家數。建議撰寫方式：\nvalue1 = getsymbolfield(\"TSE50.SJ\",\"TW50價格上漲家數\");"
+  },
+  {
+    "name": "下跌家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8B%E8%B7%8C%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "指數成分股內目前下跌的家數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"下跌家數\");\nValue1 = GetField(\"DownSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數成分股內目前下跌的家數。統計資料盤中會定時更新，如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。大盤商品的統計會扣除權證商品。請注意：下跌家數與跌停家數是分別統計的，下跌家數並不包含跌停的家數。"
+  },
+  {
+    "name": "上漲家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8A%E6%BC%B2%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "指數成分股內目前上漲的家數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"上漲家數\");\nValue1 = GetField(\"UpSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數成分股內目前上漲的家數。統計資料盤中會定時更新，如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。大盤商品的統計會扣除權證商品。請注意：上漲家數與漲停家數是分別統計的，上漲家數並不包含漲停的家數。"
+  },
+  {
+    "name": "內盤家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E7%9B%A4%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "指數成分股內目前以內盤成交的家數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內盤家數\");\nValue1 = GetField(\"BidSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數成分股內目前以內盤成交的家數。統計資料盤中會定時更新，如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。大盤商品的統計會扣除權證商品。"
+  },
+  {
+    "name": "外盤家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E7%9B%A4%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "指數成分股內目前以外盤成交的家數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外盤家數\");\nValue1 = GetField(\"AskSecurities\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數成分股內目前以外盤成交的家數。統計資料盤中會定時更新，如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。大盤商品的統計會扣除權證商品。"
+  },
+  {
+    "name": "跌停家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B7%8C%E5%81%9C%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "指數成分股內目前跌停的家數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"跌停家數\");\nValue1 = GetField(\"DownLimitSecs\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數成分股內目前跌停的家數。統計資料盤中會定時更新，如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。大盤商品的統計會扣除權證商品。"
+  },
+  {
+    "name": "漲停家數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%BC%B2%E5%81%9C%E5%AE%B6%E6%95%B8&group=TMARKET",
+    "head_description": "指數成分股內目前漲停的家數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"漲停家數\");\nValue1 = GetField(\"UpLimitSecs\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "家",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數成分股內目前漲停的家數。統計資料盤中會定時更新，如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。大盤商品的統計會扣除權證商品。"
+  },
+  {
+    "name": "騰落指標",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%A8%B0%E8%90%BD%E6%8C%87%E6%A8%99&group=TMARKET",
+    "head_description": "長期累積的(上漲家數─下跌家數)的數值。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"騰落指標\");\nValue1 = GetField(\"UDIndicator\");\n",
+    "field_category": [
+      "市場統計"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "長期累積的(上漲家數─下跌家數)的數值。這個指標也稱為Advance-Decline Line，透過累算每日市場漲跌家數的差值，來反應出整體市場行情漲升力道的強弱變化，並且以此來研判出未來行情大勢可能的發展方向。請參考：https://www.moneydj.com/KMDJ/Wiki/wikiViewer.aspx?keyid=6819746d-ce57-4753-98d2-d840d2cc6219"
+  }
+]

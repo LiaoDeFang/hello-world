@@ -1,0 +1,318 @@
+[
+  {
+    "name": "內外盤",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E5%A4%96%E7%9B%A4&group=TPRICE",
+    "head_description": "這一筆成交明細內的「內外盤」標記。數值是1時表示是外盤成交，數值是-1時為內盤成交，如果是0的話則表示無法判斷。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內外盤\");\nValue1 = GetField(\"BidAskFlag\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "這一筆成交明細內的「內外盤」標記。數值是1時表示是外盤成交，數值是-1時為內盤成交，如果是0的話則表示無法判斷。系統會依照成交發生當時五檔委託簿的最佳委買價格以及最佳委賣價格來判斷此筆是外盤成交或是內盤成交。如果成交的價格貼近委賣價格的話，則標示為外盤成交，一般會視為主動「買進」。如果成交的價格貼近委買價格的話，則標示為內盤成交，一般會視為主動「賣出」。"
+  },
+  {
+    "name": "收盤價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%94%B6%E7%9B%A4%E5%83%B9&group=TPRICE",
+    "head_description": "K棒資料的收盤價(最後一個成交價位)。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"收盤價\");\nValue1 = GetField(\"Close\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的收盤價(最後一個成交價位)。語法上也可以使用Close來取得同樣的數值。"
+  },
+  {
+    "name": "均價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9D%87%E5%83%B9&group=TPRICE",
+    "head_description": "每日的平均成交價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"均價\");\nValue1 = GetField(\"AvgPrice\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "每日的平均成交價。計算方式是累加每日開盤後每筆成交的價格乘上數量，然後除以累計的成交數量，得出當日平均的成交價。如果是分鐘頻率的話，數值為開盤到現在為止的成交均價。如果是日頻率的話則是當日的成交均價。"
+  },
+  {
+    "name": "投資建議目標價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E7%9B%AE%E6%A8%99%E5%83%B9&group=TPRICE",
+    "head_description": "由 FactSet 提供的投資建議目標價格。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投資建議目標價\");\nValue1 = GetField(\"AnalystPriceTargets\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "台股:元；美股:元(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "市場機構對個股的股價預估平均值。\n美股股票才適用本欄位。每個市場機構會不定期的對股票提供評等，同時也會提供預估目標價。\n基於所有機構所提供的預估目標價，採平均計算後，就會得到投資目標價欄位。請注意：此欄位會不定期的更新並不是所有的股票都會有這個欄位"
+  },
+  {
+    "name": "參考價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8F%83%E8%80%83%E5%83%B9&group=TPRICE",
+    "head_description": "當日交易的參考價。一般而言是前一交易日的收盤價，如果股票商品有除權息的話，則是除權息後的參考價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"參考價\");\nValue1 = GetField(\"RefPrice\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日交易的參考價。一般而言是前一交易日的收盤價，如果股票商品有除權息的話，則是除權息後的參考價。除權息的計算公式如下(實際數值以交易所公佈為主)：\n1.除息參考價為股價－股息\n2.除權參考價為股價／(1+配股率)\n3.同時除權息參考價為 (股價-股息)／(1+配股率)"
+  },
+  {
+    "name": "基差",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9F%BA%E5%B7%AE&group=TPRICE",
+    "head_description": "現貨價格與期貨價格之間的差異。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"基差\");\nValue1 = GetField(\"Basis\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "點",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨"
+    ],
+    "description": "現貨價格與期貨價格之間的差異。例如：加權指數為16800，而大台指為16795的話，那麼基差＝16800 ─ 16795＝5。"
+  },
+  {
+    "name": "強弱指標",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%BC%B7%E5%BC%B1%E6%8C%87%E6%A8%99&group=TPRICE",
+    "head_description": "商品漲跌幅與對應大盤漲跌幅的差異，用來衡量商品是否比大盤強。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"強弱指標\");\nValue1 = GetField(\"StrongWeak\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "類股指數"
+    ],
+    "description": "商品漲跌幅與對應大盤漲跌幅的差異，用來衡量商品是否比大盤強。強弱指標的計算公式是(商品漲跌幅－對應大盤漲跌幅)。單位是％，例如商品漲幅是2.5％，對應大盤漲幅是1.8%，那麼強弱指標則為+0.7。"
+  },
+  {
+    "name": "最低價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E4%BD%8E%E5%83%B9&group=TPRICE",
+    "head_description": "K棒資料的最低成交價位。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"最低價\");\nValue1 = GetField(\"Low\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的最低成交價位。語法上也可以使用Low來取得同樣的數值。"
+  },
+  {
+    "name": "最高價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E9%AB%98%E5%83%B9&group=TPRICE",
+    "head_description": "K棒資料的最高成交價位。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"最高價\");\nValue1 = GetField(\"High\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的最高成交價位。語法上也可以使用High來取得同樣的數值。"
+  },
+  {
+    "name": "買入價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E5%85%A5%E5%83%B9&group=TPRICE",
+    "head_description": "這一筆成交明細內的「買進」價格。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買入價\");\nValue1 = GetField(\"BidPrice\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "這一筆成交明細內的「買進」價格。「買進」價格為成交發生當時五檔委託簿的最佳委買價格。"
+  },
+  {
+    "name": "跌停價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B7%8C%E5%81%9C%E5%83%B9&group=TPRICE",
+    "head_description": "當日的跌停價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"跌停價\");\nValue1 = GetField(\"DownLimit\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日的跌停價。"
+  },
+  {
+    "name": "開盤價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E5%83%B9&group=TPRICE",
+    "head_description": "K棒資料的開盤價(第一個成交價位)。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"開盤價\");\nValue1 = GetField(\"Open\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的開盤價(第一個成交價位)。語法上也可以使用Open來取得同樣的數值。"
+  },
+  {
+    "name": "漲停價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%BC%B2%E5%81%9C%E5%83%B9&group=TPRICE",
+    "head_description": "當日的漲停價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"漲停價\");\nValue1 = GetField(\"UpLimit\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日的漲停價。"
+  },
+  {
+    "name": "賣出價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%83%B9&group=TPRICE",
+    "head_description": "這一筆成交明細內的「賣出」價格。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出價\");\nValue1 = GetField(\"AskPrice\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "這一筆成交明細內的「賣出」價格。「賣出」價格為成交發生當時五檔委託簿的最佳委賣價格。"
+  }
+]

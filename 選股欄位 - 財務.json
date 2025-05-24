@@ -1,0 +1,4752 @@
+[
+  {
+    "name": "(存貨+應收帳款)／營收",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%28%E5%AD%98%E8%B2%A8%2B%E6%87%89%E6%94%B6%E5%B8%B3%E6%AC%BE%29%EF%BC%8F%E7%87%9F%E6%94%B6&group=FFINANCE",
+    "head_description": "計算公式: (存貨+應收帳款及票據)／營業收入淨額*100%。",
+    "rank": "存貨+應收帳款",
+    "code": "Value1 = GetField(\"(存貨+應收帳款)／營收\");\nValue1 = GetField(\"(Inventory+AccoutReceivable)／Sales\");\nValue1 = GetField(\"(存貨+應收帳款)／季營收\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: (存貨+應收帳款及票據)／營業收入淨額*100%。"
+  },
+  {
+    "name": "10年年化報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=10%E5%B9%B4%E5%B9%B4%E5%8C%96%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "近10年年化報酬率，計算方式包含配息，以及配息再投入。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"10年年化報酬率\");\nValue1 = GetField(\"IRR10YAnnualized\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "近10年年化報酬率，計算方式包含配息，以及配息再投入。公式是期間的累計報酬率然後年化。\n僅支援台/美ETF商品。"
+  },
+  {
+    "name": "1年年化報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=1%E5%B9%B4%E5%B9%B4%E5%8C%96%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "近1年年化報酬率，計算方式包含配息，以及配息再投入。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"1年年化報酬率\");\nValue1 = GetField(\"IRR1YAnnualized\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "近1年年化報酬率，計算方式包含配息，以及配息再投入。公式是期間的累計報酬率然後年化。\n僅支援台/美ETF商品。"
+  },
+  {
+    "name": "1年夏普指數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=1%E5%B9%B4%E5%A4%8F%E6%99%AE%E6%8C%87%E6%95%B8&group=FFINANCE",
+    "head_description": "Sharpe指標衡量投資相對於其風險所帶來的超額回報率，即投資回報超過無風險利率部分的表現。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"1年夏普指數\");\nValue1 = GetField(\"SHARPE_1Y\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "Sharpe指標衡量投資相對於其風險所帶來的超額回報率，即投資回報超過無風險利率部分的表現。\n計算方式為：(商品過去一年的平均月報酬率-無風險利率)/過去一年的月報酬率的標準差，用來衡量每單位風險所獲得的超額報酬。"
+  },
+  {
+    "name": "3年年化報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=3%E5%B9%B4%E5%B9%B4%E5%8C%96%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "近3年年化報酬率，計算方式包含配息，以及配息再投入。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"3年年化報酬率\");\nValue1 = GetField(\"IRR3YAnnualized\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "近3年年化報酬率，計算方式包含配息，以及配息再投入。公式是期間的累計報酬率然後年化。\n僅支援台/美ETF商品。"
+  },
+  {
+    "name": "5年年化報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=5%E5%B9%B4%E5%B9%B4%E5%8C%96%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "近5年年化報酬率，計算方式包含配息，以及配息再投入。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"5年年化報酬率\");\nValue1 = GetField(\"IRR5YAnnualized\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "近5年年化報酬率，計算方式包含配息，以及配息再投入。公式是期間的累計報酬率然後年化。\n僅支援台/美ETF商品。"
+  },
+  {
+    "name": "EPS法說公佈值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=EPS%E6%B3%95%E8%AA%AA%E5%85%AC%E4%BD%88%E5%80%BC&group=FFINANCE",
+    "head_description": "公司在財報法說會上發佈的季度EPS數值。美股股票才適用本欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"EPS法說公佈值\");\nValue1 = GetField(\"ReportedQuarterlyEPS\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "美元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "公司在財報法說會上發佈的季度EPS數值。\n美股股票才適用本欄位。公司在每季財報公佈前通常會召開法說會(Earning Call)，會議內會公佈當季的各項財報數值，也會給出對於未來的展望。請注意：Earning Call時所公佈的當期EPS，通常是Diluted EPS before non-recurring items, 為Non-GAAP計算。所以可能會跟財務報表內依GAAP會計原則計算的EPS會有不同。SEC並沒有要求所有公司都要召開Earning Call，所以並非每一家公司都會有此欄位。此欄位的公佈時間與財報的EPS的公佈時間可能會不同。"
+  },
+  {
+    "name": "EPS預估值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=EPS%E9%A0%90%E4%BC%B0%E5%80%BC&group=FFINANCE",
+    "head_description": "市場機構對個股的季度EPS預估值。美股股票才適用本欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"EPS預估值\");\nValue1 = GetField(\"EstimateQuarterlyEPS\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "美元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "市場機構對個股的季度EPS預估值。\n美股股票才適用本欄位。請注意：這個數值是Diluted EPS before non-recurring items, 採Non-GAAP計算. 所以有可能與財務報表內依GAAP會計原則計算的EPS會有不同。市場機構並非會對每檔股票提供EPS的預估，所以並非每檔股票都會有此欄位。如果想要知道這一筆欄位的對應財報年度的話，請使用GetFieldFiscalY(\"EPS預估值\")，以及GetFieldFiscalQ(\"EPS預估值\")這兩個函數。"
+  },
+  {
+    "name": "一年內到期長期負債",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%80%E5%B9%B4%E5%85%A7%E5%88%B0%E6%9C%9F%E9%95%B7%E6%9C%9F%E8%B2%A0%E5%82%B5&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動負債」的「一年內到期長期負債」項目。金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"一年內到期長期負債\");\nValue1 = GetField(\"CurrentOfLong－TermDebt\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動負債」的「一年內到期長期負債」項目。金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "加權平均股數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8A%A0%E6%AC%8A%E5%B9%B3%E5%9D%87%E8%82%A1%E6%95%B8&group=FFINANCE",
+    "head_description": "「損益表」中「加權平均股數」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"加權平均股數\");\nValue1 = GetField(\"WeightedAverageCapitalStock\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬股。美股：百萬股",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「損益表」中「加權平均股數」項目。\n加權平均股數是依股數流通期間佔會計期間的比例計算之股數。"
+  },
+  {
+    "name": "外幣換算調整數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E5%B9%A3%E6%8F%9B%E7%AE%97%E8%AA%BF%E6%95%B4%E6%95%B8&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「國外機構報表換算差額」。金融、壽險、產險、證券股才適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"外幣換算調整數\");\nValue1 = GetField(\"AdjustmentForFX\");\nValue1 = GetField(\"國外機構報表換算差額\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「國外機構報表換算差額」。金融、壽險、產險、證券股才適用此欄位。"
+  },
+  {
+    "name": "外銷比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E9%8A%B7%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "外銷占營收的比例。單位為％，例如：外銷比率為90%，則回傳90。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"外銷比率\");\nValue1 = GetField(\"ExportRatio\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "外銷占營收的比例。\n例如：公司年度總營收為100億，外銷地區的總營收為80億，外銷比率為80%，單位為％，則回傳80。"
+  },
+  {
+    "name": "市研率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%B8%82%E7%A0%94%E7%8E%87&group=FFINANCE",
+    "head_description": "計算公式: 研發費用 / 總市值*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"市研率\");\nValue1 = GetField(\"OperatingExpense－R＆D／MarketValue\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 研發費用 / 總市值*100%。"
+  },
+  {
+    "name": "市值營收比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%B8%82%E5%80%BC%E7%87%9F%E6%94%B6%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 市值 / 當期營業收入淨額。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"市值營收比\");\nValue1 = GetField(\"MarketValue／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 市值 / 當期營業收入淨額。"
+  },
+  {
+    "name": "平均收帳天數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%B9%B3%E5%9D%87%E6%94%B6%E5%B8%B3%E5%A4%A9%E6%95%B8&group=FFINANCE",
+    "head_description": "財務比率表上的\"平均收帳天數\"欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"平均收帳天數\");\nValue1 = GetField(\"DaysReceivablesOutstanding\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "天",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的\"平均收帳天數\"欄位。"
+  },
+  {
+    "name": "平均售貨天數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%B9%B3%E5%9D%87%E5%94%AE%E8%B2%A8%E5%A4%A9%E6%95%B8&group=FFINANCE",
+    "head_description": "單期財務比率表上的\"平均售貨天數\"欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"平均售貨天數\");\nValue1 = GetField(\"DaysInventoryOutstanding\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "天",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "單期財務比率表上的\"平均售貨天數\"欄位。"
+  },
+  {
+    "name": "本期稅後淨利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%AC%E6%9C%9F%E7%A8%85%E5%BE%8C%E6%B7%A8%E5%88%A9&group=FFINANCE",
+    "head_description": "「損益表」中「歸屬母公司淨利（損）」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"本期稅後淨利\");\nValue1 = GetField(\"NetIncome\");\nValue1 = GetField(\"歸屬母公司淨利(損)\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「損益表」中「歸屬母公司淨利（損）」項目。\n凡本期淨利（或淨損）歸屬於母公司業主之當期分攤數屬之。本期淨利（淨損）為繼續營業單位本期淨利（或淨損）加計停業單位損益之餘額屬之。"
+  },
+  {
+    "name": "未分配盈餘",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%AA%E5%88%86%E9%85%8D%E7%9B%88%E9%A4%98&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「未分配盈餘」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"未分配盈餘\");\nValue1 = GetField(\"UnappropriatedRetainedEarnings\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「未分配盈餘」。"
+  },
+  {
+    "name": "未完工程及預付款",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%AA%E5%AE%8C%E5%B7%A5%E7%A8%8B%E5%8F%8A%E9%A0%90%E4%BB%98%E6%AC%BE&group=FFINANCE",
+    "head_description": "「資產負債表」中「非流動資產」項內的「預付設備款」項目。金融、壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"未完工程及預付款\");\nValue1 = GetField(\"ConstructionProcess＆Prepayment\");\nValue1 = GetField(\"預付設備款\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「非流動資產」項內的「預付設備款」項目。金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "用人費用率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%94%A8%E4%BA%BA%E8%B2%BB%E7%94%A8%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「用人費用率」欄位。提供單季與年度資料。單位為%，例如：用人費用率為15%，則回傳15。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"用人費用率\");\nValue1 = GetField(\"Employee Fee ％\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「用人費用率」欄位。提供單季與年度資料。單位為%，例如：用人費用率為15%，則回傳15。"
+  },
+  {
+    "name": "企業價值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BC%81%E6%A5%AD%E5%83%B9%E5%80%BC&group=FFINANCE",
+    "head_description": "計算公式: 總市值 ＋ 負債總額 － 現金及約當現金。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"企業價值\");\nValue1 = GetField(\"EnterpriseValue\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 總市值 ＋ 負債總額 － 現金及約當現金。"
+  },
+  {
+    "name": "企業價值營收比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BC%81%E6%A5%AD%E5%83%B9%E5%80%BC%E7%87%9F%E6%94%B6%E6%AF%94&group=FFINANCE",
+    "head_description": "計算方式: (總市值 + 負債總額－現金及約當現金) / 營業收入淨額 *100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"企業價值營收比\");\nValue1 = GetField(\"CorporateValue／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算方式: (總市值 + 負債總額－現金及約當現金) / 營業收入淨額 *100%。"
+  },
+  {
+    "name": "因子_QMJ安全",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_QMJ%E5%AE%89%E5%85%A8&group=FFINANCE",
+    "head_description": "從六個指標(貝他因子、負債比率、股東權益報酬率的波動度、特質波動度、Altman’s Z分數、以及Ohlson's O分數)個別找出每項指標中某檔股票在整體市場的排名，將這六個排名的標準化數值平均，即為該檔股票的綜合安全評分。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_QMJ安全\");\nValue1 = GetField(\"Factor_QMJ_SAFETY\");\nValue1 = GetField(\"因子_QMJ安全因子\");\nValue1 = GetField(\"Factor_QMJ_Safety Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "從六個指標(貝他因子、負債比率、股東權益報酬率的波動度、特質波動度、Altman’s Z分數、以及Ohlson's O分數)個別找出每項指標中某檔股票在整體市場的排名，將這六個排名的標準化數值平均，即為該檔股票的綜合安全評分。"
+  },
+  {
+    "name": "因子_QMJ獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_QMJ%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "從六個指標(應計項目佔資產比率、自由現金流量佔總資產比率、毛利佔資產比率、毛利佔營收比率、資產報酬率、股東權益報酬率)個別找出每項指標中某檔股票在整體市場的排名，將這六個排名的標準化數值平均，即為該檔股票的綜合獲利能力評分。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_QMJ獲利\");\nValue1 = GetField(\"Factor_QMJ_PROFIT\");\nValue1 = GetField(\"因子_QMJ獲利因子\");\nValue1 = GetField(\"Factor_QMJ_Profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "從六個指標(應計項目佔資產比率、自由現金流量佔總資產比率、毛利佔資產比率、毛利佔營收比率、資產報酬率、股東權益報酬率)個別找出每項指標中某檔股票在整體市場的排名，將這六個排名的標準化數值平均，即為該檔股票的綜合獲利能力評分。"
+  },
+  {
+    "name": "因子_一年動能",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E4%B8%80%E5%B9%B4%E5%8B%95%E8%83%BD&group=FFINANCE",
+    "head_description": "股票在過去1年內(不包含當月，共計11個月)的漲跌幅度。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_一年動能\");\nValue1 = GetField(\"Factor_MOM\");\nValue1 = GetField(\"因子_動能因子(以前11個月報酬為基準)\");\nValue1 = GetField(\"Factor_Momentum Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股票在過去1年內(不包含當月，共計11個月)的漲跌幅度。"
+  },
+  {
+    "name": "因子_日週轉率流動性",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E6%97%A5%E9%80%B1%E8%BD%89%E7%8E%87%E6%B5%81%E5%8B%95%E6%80%A7&group=FFINANCE",
+    "head_description": "過去一個月的日週轉率平均值。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_日週轉率流動性\");\nValue1 = GetField(\"Factor_TURNOVER_AVG\");\nValue1 = GetField(\"因子_流動性因子(以平均日週轉率為基準)\");\nValue1 = GetField(\"Factor_Trading volume Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "過去一個月的日週轉率平均值。\n日週轉率=日成交量/發行量。"
+  },
+  {
+    "name": "因子_月週轉率流動性",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E6%9C%88%E9%80%B1%E8%BD%89%E7%8E%87%E6%B5%81%E5%8B%95%E6%80%A7&group=FFINANCE",
+    "head_description": "自然對數(標準差(股票過去36個月的月週轉率))。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_月週轉率流動性\");\nValue1 = GetField(\"Factor_STDTURN\");\nValue1 = GetField(\"因子_流動性因子(以股票月週轉率標準差為基準)\");\nValue1 = GetField(\"Factor_Standard deviation of share turnover Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "自然對數(標準差(股票過去36個月的月週轉率))。\n月週轉率=月成交量/發行量。"
+  },
+  {
+    "name": "因子_半年動能因子",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%8D%8A%E5%B9%B4%E5%8B%95%E8%83%BD%E5%9B%A0%E5%AD%90&group=FFINANCE",
+    "head_description": "股票在過去1年至過去半年這段期間內(12個月前至7個月前)的漲跌幅度。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_半年動能因子\");\nValue1 = GetField(\"Factor_MOM_1Y\");\nValue1 = GetField(\"因子_動能因子(以前7~12月報酬為基準)\");\nValue1 = GetField(\"Factor_Momentum Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股票在過去1年至過去半年這段期間內(12個月前至7個月前)的漲跌幅度。"
+  },
+  {
+    "name": "因子_成交值流動性",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E6%88%90%E4%BA%A4%E5%80%BC%E6%B5%81%E5%8B%95%E6%80%A7&group=FFINANCE",
+    "head_description": "自然對數(過去一個月成交金額加總)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_成交值流動性\");\nValue1 = GetField(\"Factor_DVOL\");\nValue1 = GetField(\"因子_流動性因子(以成交值為基準)\");\nValue1 = GetField(\"Factor_Trading volume Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "自然對數(過去一個月成交金額加總)。"
+  },
+  {
+    "name": "因子_貝他值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E8%B2%9D%E4%BB%96%E5%80%BC&group=FFINANCE",
+    "head_description": "過去一年的日報酬率和市場報酬率之共變異數/市場報酬率之變異數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_貝他值\");\nValue1 = GetField(\"Factor_BETA_1Y\");\nValue1 = GetField(\"因子_貝他因子\");\nValue1 = GetField(\"Factor_BETA_1year Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "過去一年的日報酬率和市場報酬率之共變異數/市場報酬率之變異數。\n股票所屬市場視其交易市場而定，上市公司=加權指數報酬率；上櫃公司=櫃買指數報酬率。此因子與「貝他值」不同，是由中興大學財金所提供之因子計算規則計算而得。"
+  },
+  {
+    "name": "因子_股票發行量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E8%82%A1%E7%A5%A8%E7%99%BC%E8%A1%8C%E9%87%8F&group=FFINANCE",
+    "head_description": "自然對數(當期股票面額/上季股票面額/前一季流通在外股數)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_股票發行量\");\nValue1 = GetField(\"Factor_ISSUE\");\nValue1 = GetField(\"因子_股票發行量因子\");\nValue1 = GetField(\"Factor_Share issuance Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "自然對數(當期股票面額/上季股票面額/前一季流通在外股數)。"
+  },
+  {
+    "name": "因子_前一年獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%89%8D%E4%B8%80%E5%B9%B4%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "一年前的營業利益/三年前的帳面權益。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_前一年獲利\");\nValue1 = GetField(\"Factor_PROFITABILITY_LAG1\");\nValue1 = GetField(\"因子_獲利因子(以前一年獲利為基準)\");\nValue1 = GetField(\"Factor_one year lagged profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "一年前的營業利益/三年前的帳面權益。\n帳面權益=總資產-總負債+遞延所得稅-特別股股本。"
+  },
+  {
+    "name": "因子_前三年獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%89%8D%E4%B8%89%E5%B9%B4%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "三年前的營業利益/三年前的帳面權益。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_前三年獲利\");\nValue1 = GetField(\"Factor_PROFITABILITY_LAG3\");\nValue1 = GetField(\"因子_獲利因子(以前三年獲利為基準)\");\nValue1 = GetField(\"Factor_three year lagged  profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "三年前的營業利益/三年前的帳面權益。\n帳面權益=總資產-總負債+遞延所得稅-特別股股本。"
+  },
+  {
+    "name": "因子_前兩年獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%89%8D%E5%85%A9%E5%B9%B4%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "兩年前的營業利益/三年前的帳面權益。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_前兩年獲利\");\nValue1 = GetField(\"Factor_PROFITABILITY_LAG2\");\nValue1 = GetField(\"因子_獲利因子(以前兩年獲利為基準)\");\nValue1 = GetField(\"Factor_two year lagged  profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "兩年前的營業利益/三年前的帳面權益。\n帳面權益=總資產-總負債+遞延所得稅-特別股股本。"
+  },
+  {
+    "name": "因子_特質波動度",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E7%89%B9%E8%B3%AA%E6%B3%A2%E5%8B%95%E5%BA%A6&group=FFINANCE",
+    "head_description": "透過對歷史股票報酬與市場報酬進行Fama French三因子統計迴歸分析，並計算迴歸殘差值的標準差，即為特質波動度因子。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_特質波動度\");\nValue1 = GetField(\"Factor_IVOL\");\nValue1 = GetField(\"因子_特質波動度因子\");\nValue1 = GetField(\"Factor_Idiosyncratic Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "透過對歷史股票報酬與市場報酬進行Fama French三因子統計迴歸分析，並計算迴歸殘差值的標準差，即為特質波動度因子。\nFama French三因子是透過將市場上的股票分組後統計出的市場溢酬、規模溢酬、以及價值溢酬。"
+  },
+  {
+    "name": "因子_偏態係數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%81%8F%E6%85%8B%E4%BF%82%E6%95%B8&group=FFINANCE",
+    "head_description": "日報酬率序列的三階主動差/日報酬率序列的二階主動差的1.5次方根。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_偏態係數\");\nValue1 = GetField(\"Factor_TSKEW\");\nValue1 = GetField(\"因子_偏態係數因子\");\nValue1 = GetField(\"Factor_Total Skewness Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "日報酬率序列的三階主動差/日報酬率序列的二階主動差的1.5次方根。"
+  },
+  {
+    "name": "因子_帳面市值比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%B8%B3%E9%9D%A2%E5%B8%82%E5%80%BC%E6%AF%94&group=FFINANCE",
+    "head_description": "自然對數(帳面價值/市場價值)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_帳面市值比\");\nValue1 = GetField(\"Factor_BM\");\nValue1 = GetField(\"因子_帳面市值比因子\");\nValue1 = GetField(\"Factor_Book-to-Market ratio Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "自然對數(帳面價值/市場價值)。\n帳面價值=股東權益總額+遞延所得稅。\n市場價值=股票總市值。"
+  },
+  {
+    "name": "因子_彩券型需求",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%BD%A9%E5%88%B8%E5%9E%8B%E9%9C%80%E6%B1%82&group=FFINANCE",
+    "head_description": "過去一個月中最大五筆日報酬率的簡單算數平均。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_彩券型需求\");\nValue1 = GetField(\"Factor_MAX\");\nValue1 = GetField(\"因子_彩券型需求因子\");\nValue1 = GetField(\"Factor_Lottery Demand Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "過去一個月中最大五筆日報酬率的簡單算數平均。"
+  },
+  {
+    "name": "因子_淨營運資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E6%B7%A8%E7%87%9F%E9%81%8B%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "淨營運資產/去年同期總資產。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_淨營運資產\");\nValue1 = GetField(\"Factor_NOA\");\nValue1 = GetField(\"因子_淨營運資產因子\");\nValue1 = GetField(\"Factor_Net Operating Assets Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "淨營運資產/去年同期總資產。\n淨營運資產=營運資產-營運負債。\n營運資產=資產總額-現金及短期投資。\n營運負債=資產總額-短期負債-長期負債-少數股權-特別股股本-普通股股本。"
+  },
+  {
+    "name": "因子_現金流量波動度",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E6%B3%A2%E5%8B%95%E5%BA%A6&group=FFINANCE",
+    "head_description": "標準差(過去16季之營業現金流量/營業收入)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_現金流量波動度\");\nValue1 = GetField(\"Factor_VCF\");\nValue1 = GetField(\"因子_現金流量波動度因子\");\nValue1 = GetField(\"Factor_Cash flow volatility Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "標準差(過去16季之營業現金流量/營業收入)。"
+  },
+  {
+    "name": "因子_最高價動能",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E6%9C%80%E9%AB%98%E5%83%B9%E5%8B%95%E8%83%BD&group=FFINANCE",
+    "head_description": "當前收盤價與過去52週內最高價的比值。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_最高價動能\");\nValue1 = GetField(\"Factor_MOM_52W\");\nValue1 = GetField(\"因子_動能因子(以前52週高價為基準)\");\nValue1 = GetField(\"Factor_52-week High Momentum Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當前收盤價與過去52週內最高價的比值。"
+  },
+  {
+    "name": "因子_實現損益偏態係數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E5%AF%A6%E7%8F%BE%E6%90%8D%E7%9B%8A%E5%81%8F%E6%85%8B%E4%BF%82%E6%95%B8&group=FFINANCE",
+    "head_description": "偏態係數分子/偏態係數分母。偏態係數分子=過去一個月對數日報酬率的平方加總，再開3/2次方根。偏態係數分母=過去一個月對數日報酬率的三次方加總，並乘以上個月交易天數的平方根。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_實現損益偏態係數\");\nValue1 = GetField(\"Factor_RDSKEW\");\nValue1 = GetField(\"因子_偏態係數因子(以實現損益為基準)\");\nValue1 = GetField(\"Factor_Realized skewness Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "偏態係數分子/偏態係數分母。\n偏態係數分子=過去一個月對數日報酬率的平方加總，再開3/2次方根。\n偏態係數分母=過去一個月對數日報酬率的三次方加總，並乘以上個月交易天數的平方根。"
+  },
+  {
+    "name": "因子_潛在上檔報酬比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90_%E6%BD%9B%E5%9C%A8%E4%B8%8A%E6%AA%94%E5%A0%B1%E9%85%AC%E6%AF%94&group=FFINANCE",
+    "head_description": "將過去1年的日報酬率隨機抽樣1000筆，以正報酬率的加總與過去1年日交易天數的比值作為分子，以負報酬率的平方加總與過去1年日交易天數的比值平方根作為分母，得到的比率即為潛在上檔報酬比率因子。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子_潛在上檔報酬比\");\nValue1 = GetField(\"Factor_UPR\");\nValue1 = GetField(\"因子_潛在上檔報酬比率因子\");\nValue1 = GetField(\"Factor_Upside Potential Ratio Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "將過去1年的日報酬率隨機抽樣1000筆，以正報酬率的加總與過去1年日交易天數的比值作為分子，以負報酬率的平方加總與過去1年日交易天數的比值平方根作為分母，得到的比率即為潛在上檔報酬比率因子。"
+  },
+  {
+    "name": "因子分數_QMJ安全",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_QMJ%E5%AE%89%E5%85%A8&group=FFINANCE",
+    "head_description": "QMJ安全因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_QMJ安全\");\nValue1 = GetField(\"FactorScore_QMJ_SAFETY\");\nValue1 = GetField(\"因子分數_QMJ安全因子\");\nValue1 = GetField(\"FactorScore_QMJ_Safety Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "QMJ安全因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_QMJ獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_QMJ%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "QMJ獲利因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_QMJ獲利\");\nValue1 = GetField(\"FactorScore_QMJ_PROFIT\");\nValue1 = GetField(\"因子分數_QMJ獲利因子\");\nValue1 = GetField(\"FactorScore_QMJ_Profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "QMJ獲利因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_一年動能",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E4%B8%80%E5%B9%B4%E5%8B%95%E8%83%BD&group=FFINANCE",
+    "head_description": "動能因子(以前11個月報酬為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_一年動能\");\nValue1 = GetField(\"FactorScore_MOM\");\nValue1 = GetField(\"因子分數_動能因子(以前11個月報酬為基準)\");\nValue1 = GetField(\"FactorScore_Momentum Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "動能因子(以前11個月報酬為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_日週轉率流動性",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E6%97%A5%E9%80%B1%E8%BD%89%E7%8E%87%E6%B5%81%E5%8B%95%E6%80%A7&group=FFINANCE",
+    "head_description": "流動性因子(以平均日週轉率為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_日週轉率流動性\");\nValue1 = GetField(\"FactorScore_TURNOVER_AVG\");\nValue1 = GetField(\"因子分數_流動性因子(以平均日週轉率為基準)\");\nValue1 = GetField(\"FactorScore_Trading volume Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "流動性因子(以平均日週轉率為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_月週轉率流動性",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E6%9C%88%E9%80%B1%E8%BD%89%E7%8E%87%E6%B5%81%E5%8B%95%E6%80%A7&group=FFINANCE",
+    "head_description": "流動性因子(以股票月週轉率標準差為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_月週轉率流動性\");\nValue1 = GetField(\"FactorScore_STDTURN\");\nValue1 = GetField(\"因子分數_流動性因子(以股票月週轉率標準差為基準)\");\nValue1 = GetField(\"FactorScore_Standard deviation of share turnover Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "流動性因子(以股票月週轉率標準差為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_半年動能因子",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%8D%8A%E5%B9%B4%E5%8B%95%E8%83%BD%E5%9B%A0%E5%AD%90&group=FFINANCE",
+    "head_description": "動能因子(以前7~12月報酬為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_半年動能因子\");\nValue1 = GetField(\"FactorScore_MOM_1Y\");\nValue1 = GetField(\"因子分數_動能因子(以前7~12月報酬為基準)\");\nValue1 = GetField(\"FactorScore_Momentum Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "動能因子(以前7~12月報酬為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_成交值流動性",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E6%88%90%E4%BA%A4%E5%80%BC%E6%B5%81%E5%8B%95%E6%80%A7&group=FFINANCE",
+    "head_description": "流動性因子(以成交值為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_成交值流動性\");\nValue1 = GetField(\"FactorScore_DVOL\");\nValue1 = GetField(\"因子分數_流動性因子(以成交值為基準)\");\nValue1 = GetField(\"FactorScore_Trading volume Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "流動性因子(以成交值為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_貝他值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E8%B2%9D%E4%BB%96%E5%80%BC&group=FFINANCE",
+    "head_description": "貝他因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_貝他值\");\nValue1 = GetField(\"FactorScore_BETA_1Y\");\nValue1 = GetField(\"因子分數_貝他因子\");\nValue1 = GetField(\"FactorScore_BETA_1year Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "貝他因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_股東權益報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E8%82%A1%E6%9D%B1%E6%AC%8A%E7%9B%8A%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "股東權益報酬率因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_股東權益報酬率\");\nValue1 = GetField(\"FactorScore_ROE\");\nValue1 = GetField(\"因子分數_股東權益報酬率因子\");\nValue1 = GetField(\"FactorScore_Return on Equity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股東權益報酬率因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_股票發行量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E8%82%A1%E7%A5%A8%E7%99%BC%E8%A1%8C%E9%87%8F&group=FFINANCE",
+    "head_description": "股票發行量因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_股票發行量\");\nValue1 = GetField(\"FactorScore_ISSUE\");\nValue1 = GetField(\"因子分數_股票發行量因子\");\nValue1 = GetField(\"FactorScore_Share issuance Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股票發行量因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_前一年獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%89%8D%E4%B8%80%E5%B9%B4%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "獲利因子(以前一年獲利為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_前一年獲利\");\nValue1 = GetField(\"FactorScore_PROFITABILITY_LAG1\");\nValue1 = GetField(\"因子分數_獲利因子(以前一年獲利為基準)\");\nValue1 = GetField(\"FactorScore_one year lagged profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "獲利因子(以前一年獲利為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_前三年獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%89%8D%E4%B8%89%E5%B9%B4%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "獲利因子(以前三年獲利為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_前三年獲利\");\nValue1 = GetField(\"FactorScore_PROFITABILITY_LAG3\");\nValue1 = GetField(\"因子分數_獲利因子(以前三年獲利為基準)\");\nValue1 = GetField(\"FactorScore_three year lagged  profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "獲利因子(以前三年獲利為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_前兩年獲利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%89%8D%E5%85%A9%E5%B9%B4%E7%8D%B2%E5%88%A9&group=FFINANCE",
+    "head_description": "獲利因子(以前兩年獲利為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_前兩年獲利\");\nValue1 = GetField(\"FactorScore_PROFITABILITY_LAG2\");\nValue1 = GetField(\"因子分數_獲利因子(以前兩年獲利為基準)\");\nValue1 = GetField(\"FactorScore_two year lagged  profitability Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "獲利因子(以前兩年獲利為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_特質波動度",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E7%89%B9%E8%B3%AA%E6%B3%A2%E5%8B%95%E5%BA%A6&group=FFINANCE",
+    "head_description": "特質波動度因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_特質波動度\");\nValue1 = GetField(\"FactorScore_IVOL\");\nValue1 = GetField(\"因子分數_特質波動度因子\");\nValue1 = GetField(\"FactorScore_Idiosyncratic Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "特質波動度因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_偏態係數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%81%8F%E6%85%8B%E4%BF%82%E6%95%B8&group=FFINANCE",
+    "head_description": "偏態係數因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_偏態係數\");\nValue1 = GetField(\"FactorScore_TSKEW\");\nValue1 = GetField(\"因子分數_偏態係數因子\");\nValue1 = GetField(\"FactorScore_Total Skewness Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "偏態係數因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_帳面市值比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%B8%B3%E9%9D%A2%E5%B8%82%E5%80%BC%E6%AF%94&group=FFINANCE",
+    "head_description": "帳面市值比因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_帳面市值比\");\nValue1 = GetField(\"FactorScore_BM\");\nValue1 = GetField(\"因子分數_帳面市值比因子\");\nValue1 = GetField(\"FactorScore_Book-to-Market ratio Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "帳面市值比因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_彩券型需求",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%BD%A9%E5%88%B8%E5%9E%8B%E9%9C%80%E6%B1%82&group=FFINANCE",
+    "head_description": "彩券型需求因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_彩券型需求\");\nValue1 = GetField(\"FactorScore_MAX\");\nValue1 = GetField(\"因子分數_彩券型需求因子\");\nValue1 = GetField(\"FactorScore_Lottery Demand Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "彩券型需求因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_淨營運資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E6%B7%A8%E7%87%9F%E9%81%8B%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "淨營運資產因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_淨營運資產\");\nValue1 = GetField(\"FactorScore_NOA\");\nValue1 = GetField(\"因子分數_淨營運資產因子\");\nValue1 = GetField(\"FactorScore_Net Operating Assets Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "淨營運資產因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_現金流量波動度",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E6%B3%A2%E5%8B%95%E5%BA%A6&group=FFINANCE",
+    "head_description": "現金流量波動度因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_現金流量波動度\");\nValue1 = GetField(\"FactorScore_VCF\");\nValue1 = GetField(\"因子分數_現金流量波動度因子\");\nValue1 = GetField(\"FactorScore_Cash flow volatility Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "現金流量波動度因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_現金殖利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E7%8F%BE%E9%87%91%E6%AE%96%E5%88%A9%E7%8E%87&group=FFINANCE",
+    "head_description": "現金殖利率因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_現金殖利率\");\nValue1 = GetField(\"FactorScore_DY\");\nValue1 = GetField(\"因子分數_現金殖利率因子\");\nValue1 = GetField(\"FactorScore_Dividend Yield\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "現金殖利率因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_最高價動能",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E6%9C%80%E9%AB%98%E5%83%B9%E5%8B%95%E8%83%BD&group=FFINANCE",
+    "head_description": "動能因子(以前52週高價為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_最高價動能\");\nValue1 = GetField(\"FactorScore_MOM_52W\");\nValue1 = GetField(\"因子分數_動能因子(以前52週高價為基準)\");\nValue1 = GetField(\"FactorScore_52-week High Momentum Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "動能因子(以前52週高價為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_實現損益偏態係數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E5%AF%A6%E7%8F%BE%E6%90%8D%E7%9B%8A%E5%81%8F%E6%85%8B%E4%BF%82%E6%95%B8&group=FFINANCE",
+    "head_description": "偏態係數因子(以實現損益為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_實現損益偏態係數\");\nValue1 = GetField(\"FactorScore_RDSKEW\");\nValue1 = GetField(\"因子分數_偏態係數因子(以實現損益為基準)\");\nValue1 = GetField(\"FactorScore_Realized skewness Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "偏態係數因子(以實現損益為基準)經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "因子分數_潛在上檔報酬比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%A0%E5%AD%90%E5%88%86%E6%95%B8_%E6%BD%9B%E5%9C%A8%E4%B8%8A%E6%AA%94%E5%A0%B1%E9%85%AC%E6%AF%94&group=FFINANCE",
+    "head_description": "潛在上檔報酬比率因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"因子分數_潛在上檔報酬比\");\nValue1 = GetField(\"FactorScore_UPR\");\nValue1 = GetField(\"因子分數_潛在上檔報酬比率因子\");\nValue1 = GetField(\"FactorScore_Upside Potential Ratio Factor\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "潛在上檔報酬比率因子經過過濾因子極端值、流動性不足及交易天數不足的商品後的優化排名分數。"
+  },
+  {
+    "name": "存貨",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%AD%98%E8%B2%A8&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「存貨」項目。金融、壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"存貨\");\nValue1 = GetField(\"Inventories\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「存貨」項目。金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "存貨及應收帳款／淨值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%AD%98%E8%B2%A8%E5%8F%8A%E6%87%89%E6%94%B6%E5%B8%B3%E6%AC%BE%EF%BC%8F%E6%B7%A8%E5%80%BC&group=FFINANCE",
+    "head_description": "財務比率表上的「存貨及應收帳款/淨值」欄位。提供單季與年度資料。單位為%，例如：存貨及應收帳款/淨值為5%，則回傳5。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"存貨及應收帳款／淨值\");\nValue1 = GetField(\"Inventory\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「存貨及應收帳款/淨值」欄位。提供單季與年度資料。單位為%，例如：存貨及應收帳款/淨值為5%，則回傳5。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "存貨週轉率(次)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%AD%98%E8%B2%A8%E9%80%B1%E8%BD%89%E7%8E%87%28%E6%AC%A1%29&group=FFINANCE",
+    "head_description": "財務比率表上的「存貨週轉率(次)」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "次",
+    "code": "Value1 = GetField(\"存貨週轉率(次)\");\nValue1 = GetField(\"InventoryTurnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「存貨週轉率(次)」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "存貨營收比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%AD%98%E8%B2%A8%E7%87%9F%E6%94%B6%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 存貨之商品及製成品 / 營業收入淨額*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"存貨營收比\");\nValue1 = GetField(\"Inventory／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 存貨之商品及製成品 / 營業收入淨額*100%。"
+  },
+  {
+    "name": "年報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%B9%B4%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "僅支援台/美ETF商品.統計近N年報酬率, 計算方式包含配息, 以及配息再投入.欄位提供參數, 可以傳入年度, 支援1,3,5,10，預設是 1。(如欲計算股票的報酬率, 可以使用還原股價直接計算, 系統會提供內建函數)",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"年報酬率\",param:=1);\nValue1 = GetField(\"YearlyReturnRate\",param:=1);\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "僅支援台/美ETF商品.\n統計近N年報酬率, 計算方式包含配息, 以及配息再投入.\n欄位提供參數, 可以傳入年度, 支援1,3,5,10，預設是 1。\n(如欲計算股票的報酬率, 可以使用還原股價直接計算, 系統會提供內建函數)"
+  },
+  {
+    "name": "有息負債利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%89%E6%81%AF%E8%B2%A0%E5%82%B5%E5%88%A9%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「有息負債利率」欄位。提供單季與年度資料。單位為%，例如：有息負債利率為1.5%，則回傳1.5。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"有息負債利率\");\nValue1 = GetField(\"Int.Exp.／Debt\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「有息負債利率」欄位。\n提供單季與年度資料。\n例如：有息負債利率為1.5%，單位為%，則回傳1.5。\n不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "有效稅率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%89%E6%95%88%E7%A8%85%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「稅率(A)」欄位。提供單季與年度資料。若稅前淨利或所得稅費用為負或0、所得稅費用大於稅前淨利等特殊情況，資料會呈現為0。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"有效稅率\");\nValue1 = GetField(\"Tax Rate\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「稅率(A)」欄位。提供單季與年度資料。若稅前淨利或所得稅費用為負或0、所得稅費用大於稅前淨利等特殊情況，資料會呈現為0。"
+  },
+  {
+    "name": "自由現金流量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%94%B1%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F&group=FFINANCE",
+    "head_description": "現金流量表中的「\"來自營運之現金流量\" + \"購置不動產廠房設備（含預付）－CFI\" + \"支付利息－CFF\"」。正值表示現金流入，負值表示現金流出。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"自由現金流量\");\nValue1 = GetField(\"FCFF\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "現金流量表中的「\"來自營運之現金流量\" + \"購置不動產廠房設備（含預付）－CFI\" + \"支付利息－CFF\"」。正值表示現金流入，負值表示現金流出。"
+  },
+  {
+    "name": "自由現金流量營收比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%94%B1%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E7%87%9F%E6%94%B6%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 自由現金流量／營業收入淨額*100%。提供單季與年度資料。單位為%，例如：欄位數值為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"自由現金流量營收比\");\nValue1 = GetField(\"FCF／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "計算公式: 自由現金流量／營業收入淨額*100%。\n其中, 自由現金流量是依現金流量表中的「\"來自營運之現金流量\" + \"購置不動產廠房設備（含預付）－CFI\" + \"支付利息－CFF\"」計算之。正值表示現金流入，負值表示現金流出。\n提供單季與年度資料。\n單位為%，例如欄位數值為25%，則回傳25。"
+  },
+  {
+    "name": "兌換盈益",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%8C%E6%8F%9B%E7%9B%88%E7%9B%8A&group=FFINANCE",
+    "head_description": "「損益表」中「外幣兌換利益」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"兌換盈益\");\nValue1 = GetField(\"ForeignExchangeGains\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「外幣兌換利益」項目。凡外幣資產或負債因匯率變動實際兌換或評價之利益屬之。"
+  },
+  {
+    "name": "兌換損失",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%8C%E6%8F%9B%E6%90%8D%E5%A4%B1&group=FFINANCE",
+    "head_description": "「損益表」中「外幣兌換損失」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"兌換損失\");\nValue1 = GetField(\"ExchangeLoss\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「外幣兌換損失」項目。凡外幣資產或負債因匯率變動實際兌換、評價之損失屬之。"
+  },
+  {
+    "name": "利息支出",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%88%A9%E6%81%AF%E6%94%AF%E5%87%BA&group=FFINANCE",
+    "head_description": "「損益表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"利息支出\");\nValue1 = GetField(\"InterestExpenses\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "損益表內的項目。\n一般產業:「利息支出(不含租賃負債)」。凡非以投資為營業項目者，其舉借各種債務及金融負債所產生之利息等屬之。\n金融股:「利息支出」。凡收受存款或舉借其他債務及金融負債所發生之各項利息費用等屬之。\n壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "利息支出率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%88%A9%E6%81%AF%E6%94%AF%E5%87%BA%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「利息支出率」欄位。提供單季與年度資料。只支援證券、期貨與金控個股。不提供此欄位的公司，輸出值會以零表示。單位為%，例如：利息支出率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"利息支出率\");\nValue1 = GetField(\"InterestExpense(％)\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「利息支出率」欄位。提供單季與年度資料。只支援證券、期貨與金控個股。不提供此欄位的公司，輸出值會以零表示。單位為%，例如：利息支出率為25%，則回傳25。"
+  },
+  {
+    "name": "利息收入",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%88%A9%E6%81%AF%E6%94%B6%E5%85%A5&group=FFINANCE",
+    "head_description": "「損益表」中「利息收入」項目。證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"利息收入\");\nValue1 = GetField(\"InterestIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「利息收入」項目。凡非以投資為營業項目者，其各種存款、貸出款項及投資金融資產所產生之利息收入屬之。\n證券股不適用此欄位。"
+  },
+  {
+    "name": "利息保障倍數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%88%A9%E6%81%AF%E4%BF%9D%E9%9A%9C%E5%80%8D%E6%95%B8&group=FFINANCE",
+    "head_description": "財務比率表上的「利息保障倍數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"利息保障倍數\");\nValue1 = GetField(\"TimesInterestEarne\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「利息保障倍數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "投資活動之現金流量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E8%B3%87%E6%B4%BB%E5%8B%95%E4%B9%8B%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F&group=FFINANCE",
+    "head_description": "現金流量表上的「投資活動之現金流量」欄位。正值表示現金流入，負值表示現金流出。提供單季與年度資料。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"投資活動之現金流量\");\nValue1 = GetField(\"CashFlowInvestment\");\nValue1 = GetField(\"CFI\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "現金流量表上的「投資活動之現金流量」欄位。正值表示現金流入，負值表示現金流出。提供單季與年度資料。"
+  },
+  {
+    "name": "投資跌價損失",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E8%B3%87%E8%B7%8C%E5%83%B9%E6%90%8D%E5%A4%B1&group=FFINANCE",
+    "head_description": "「損益表」中「金融資產減損損失」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"投資跌價損失\");\nValue1 = GetField(\"LossonInvestmentRevaluation\");\nValue1 = GetField(\"金融資產減損損失\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「金融資產減損損失」項目。"
+  },
+  {
+    "name": "投資跌價損失回轉",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E8%B3%87%E8%B7%8C%E5%83%B9%E6%90%8D%E5%A4%B1%E5%9B%9E%E8%BD%89&group=FFINANCE",
+    "head_description": "「損益表」中「金融資產減損迴轉利益」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"投資跌價損失回轉\");\nValue1 = GetField(\"RevofLossonInvestment\");\nValue1 = GetField(\"金融資產減損迴轉利益\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「金融資產減損迴轉利益」項目。"
+  },
+  {
+    "name": "杜邦型ROA",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9D%9C%E9%82%A6%E5%9E%8BROA&group=FFINANCE",
+    "head_description": "計算公式: 總資產週轉率(次) * 稅後淨利率。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"杜邦型ROA\");\nValue1 = GetField(\"ROA－DuPont?Analysis\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 總資產週轉率(次) * 稅後淨利率。"
+  },
+  {
+    "name": "杜邦型ROE",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9D%9C%E9%82%A6%E5%9E%8BROE&group=FFINANCE",
+    "head_description": "計算公式: 總資產週轉率(次) * 稅後淨利率 * (資產總額 / 股東權益總額)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"杜邦型ROE\");\nValue1 = GetField(\"ROE－DuPont?Analysis\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 總資產週轉率(次) * 稅後淨利率 * (資產總額 / 股東權益總額)。"
+  },
+  {
+    "name": "每人營業利益",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E4%BA%BA%E7%87%9F%E6%A5%AD%E5%88%A9%E7%9B%8A&group=FFINANCE",
+    "head_description": "財務比率表上的「每人營業利益」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"每人營業利益\");\nValue1 = GetField(\"OperatingIncomePerEmployee\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「每人營業利益」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "每股自由現金流量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E8%87%AA%E7%94%B1%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F&group=FFINANCE",
+    "head_description": "計算公式：自由現金流量／加權平均股數",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"每股自由現金流量\");\nValue1 = GetField(\"FCFFPerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式：自由現金流量／加權平均股數"
+  },
+  {
+    "name": "每股流動淨資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E6%B5%81%E5%8B%95%E6%B7%A8%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "計算公式: (流動資產－全部負債) ／ 普通股股數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"每股流動淨資產\");\nValue1 = GetField(\"NetCurrentAssetsPerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: (流動資產－全部負債) ／ 普通股股數。"
+  },
+  {
+    "name": "每股淨值(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E6%B7%A8%E5%80%BC%28%E5%85%83%29&group=FFINANCE",
+    "head_description": "台股，是財務比率表的「每股淨值(F)(TSE公告數)」項目。美股，是財務比率表上的「每股淨值」項目。提供單季與年度資料。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"每股淨值(元)\");\nValue1 = GetField(\"BookValuePerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：元。美股：元(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股，是財務比率表的「每股淨值(F)(TSE公告數)」項目。美股，是財務比率表上的「每股淨值」項目。提供單季與年度資料。"
+  },
+  {
+    "name": "每股現金流量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F&group=FFINANCE",
+    "head_description": "財務比率表上的「每股現金流量」欄位。提供單季與年度資料。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"每股現金流量\");\nValue1 = GetField(\"CashflowPerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「每股現金流量」欄位。提供單季與年度資料。"
+  },
+  {
+    "name": "每股稅前淨利(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E7%A8%85%E5%89%8D%E6%B7%A8%E5%88%A9%28%E5%85%83%29&group=FFINANCE",
+    "head_description": "財務比率表上的「每股稅前淨利(元)」欄位。提供單季與年度資料。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"每股稅前淨利(元)\");\nValue1 = GetField(\"Pre_TaxIncomePerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「每股稅前淨利(元)」欄位。提供單季與年度資料。"
+  },
+  {
+    "name": "每股稅後淨利(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E7%A8%85%E5%BE%8C%E6%B7%A8%E5%88%A9%28%E5%85%83%29&group=FFINANCE",
+    "head_description": "台股，是損益表上的「每股盈餘」項目。美股，是損益表上的「基本每股盈餘(由淨利計算)」項目。提供單季與年度資料。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"每股稅後淨利(元)\");\nValue1 = GetField(\"EPS\");\nValue1 = GetField(\"EarningPerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：元。美股：元(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股，是損益表上的「每股盈餘」項目。美股，是損益表上的「基本每股盈餘(由淨利計算)」項目。提供單季與年度資料。"
+  },
+  {
+    "name": "每股營業利益(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E7%87%9F%E6%A5%AD%E5%88%A9%E7%9B%8A%28%E5%85%83%29&group=FFINANCE",
+    "head_description": "財務比率表上的「每股營業利益(元)」欄位。提供單季與年度資料。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"每股營業利益(元)\");\nValue1 = GetField(\"OperatingIncomePerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「每股營業利益(元)」欄位。提供單季與年度資料。"
+  },
+  {
+    "name": "每股營業額(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AF%8F%E8%82%A1%E7%87%9F%E6%A5%AD%E9%A1%8D%28%E5%85%83%29&group=FFINANCE",
+    "head_description": "財務比率表上的「每股營業額(元)」欄位。提供單季與年度資料。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"每股營業額(元)\");\nValue1 = GetField(\"SalesPerShare\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「每股營業額(元)」欄位。提供單季與年度資料。"
+  },
+  {
+    "name": "來自營運之現金流量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BE%86%E8%87%AA%E7%87%9F%E9%81%8B%E4%B9%8B%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F&group=FFINANCE",
+    "head_description": "現金流量表上的「來自營運之現金流量」欄位。正值表示現金流入，負值表示現金流出。提供單季與年度資料。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"來自營運之現金流量\");\nValue1 = GetField(\"CashFlow－Operating\");\nValue1 = GetField(\"CFO\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "現金流量表上的「來自營運之現金流量」欄位。正值表示現金流入，負值表示現金流出。提供單季與年度資料。"
+  },
+  {
+    "name": "其他收入",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%B6%E4%BB%96%E6%94%B6%E5%85%A5&group=FFINANCE",
+    "head_description": "「損益表」中「其他收入－其他」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"其他收入\");\nValue1 = GetField(\"OtherNonOperatingIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「其他收入－其他」項目。"
+  },
+  {
+    "name": "其他流動負債",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%B6%E4%BB%96%E6%B5%81%E5%8B%95%E8%B2%A0%E5%82%B5&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動負債」的「其他流動負債」項目。金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"其他流動負債\");\nValue1 = GetField(\"OtherCurrentLiabilities\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動負債」的「其他流動負債」項目。金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "其他流動資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%B6%E4%BB%96%E6%B5%81%E5%8B%95%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「其他流動資產」項目。金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"其他流動資產\");\nValue1 = GetField(\"OtherCurrentAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「其他流動資產」項目。金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "其他資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%B6%E4%BB%96%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "一般、證券股:「資產負債表」中的「其他非流動資產」項目。金融、壽險、產險:「資產負債表」中的「其他資產」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"其他資產\");\nValue1 = GetField(\"TotalOtherAssets\");\nValue1 = GetField(\"其他非流動資產\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "一般、證券股:「資產負債表」中的「其他非流動資產」項目。金融、壽險、產險:「資產負債表」中的「其他資產」項目。"
+  },
+  {
+    "name": "其他應付款",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%B6%E4%BB%96%E6%87%89%E4%BB%98%E6%AC%BE&group=FFINANCE",
+    "head_description": "「資產負債表」中負債項的「其他應付款」或「應付款項」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"其他應付款\");\nValue1 = GetField(\"OtherReceivable\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中負債項的「其他應付款」或「應付款項」項目。"
+  },
+  {
+    "name": "其他應收款",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%B6%E4%BB%96%E6%87%89%E6%94%B6%E6%AC%BE&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「其他應收款」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"其他應收款\");\nValue1 = GetField(\"BadDebtAllOther\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「其他應收款」項目。"
+  },
+  {
+    "name": "固定資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%BA%E5%AE%9A%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "台股:「資產負債表」中的「不動產及設備淨額」項目。美股: 「資產負債表」中的「財產，機器及設備淨額」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"固定資產\");\nValue1 = GetField(\"TotalFixedAssets\");\nValue1 = GetField(\"不動產廠房及設備\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股:「資產負債表」中的「不動產及設備淨額」項目。美股: 「資產負債表」中的「財產，機器及設備淨額」項目。"
+  },
+  {
+    "name": "固定資產成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%BA%E5%AE%9A%E8%B3%87%E7%94%A2%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "固定資產，是資產負債表中非流動資產項下的\"不動產廠房及設備\"。固定資產成長率，表示當期\"不動產廠房及設備\"較去年同期的成長幅度。提供季度與年度資料。單位為%，例如：固定資產成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"固定資產成長率\");\nValue1 = GetField(\"YOY％－FixedAssets\");\nValue1 = GetField(\"折舊性FA成長率\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "固定資產，是資產負債表中非流動資產項下的\"不動產廠房及設備\"。\n固定資產成長率，表示當期\"不動產廠房及設備\"較去年同期的成長幅度。\n提供季度與年度資料。\n例如：今年第一季\"不動產廠房及設備\"為100億、去年第一季為80億，固定資產成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "固定資產報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%BA%E5%AE%9A%E8%B3%87%E7%94%A2%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "計算公式: 稅後淨利／固定資產*100%。取單期財報數值來計算。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"固定資產報酬率\");\nValue1 = GetField(\"ReturnOnFixedAsset\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 稅後淨利／固定資產*100%。取單期財報數值來計算。"
+  },
+  {
+    "name": "固定資產週轉率(次)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9B%BA%E5%AE%9A%E8%B3%87%E7%94%A2%E9%80%B1%E8%BD%89%E7%8E%87%28%E6%AC%A1%29&group=FFINANCE",
+    "head_description": "財務比率表上的「固定資產週轉次數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "次",
+    "code": "Value1 = GetField(\"固定資產週轉率(次)\");\nValue1 = GetField(\"FixedAssetTurnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「固定資產週轉次數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "或有負債比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%88%96%E6%9C%89%E8%B2%A0%E5%82%B5%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「或有負債/淨值」欄位。只提供年度資料。單位為%，例如：或有負債比率為150%，則回傳150。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"或有負債比率\");\nValue1 = GetField(\"Contingent Liab／Equity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「或有負債/淨值」欄位。只提供年度資料。單位為%，例如：或有負債比率為150%，則回傳150。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "所得稅費用",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%89%80%E5%BE%97%E7%A8%85%E8%B2%BB%E7%94%A8&group=FFINANCE",
+    "head_description": "「損益表」中「所得稅費用」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"所得稅費用\");\nValue1 = GetField(\"IncomeTaxExpense\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「所得稅費用」項目。\n凡本期稅前淨利（或淨損），依所得稅法等有關規定核算應認列之所得稅費用（或利益）屬之。"
+  },
+  {
+    "name": "法定盈餘公積",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B3%95%E5%AE%9A%E7%9B%88%E9%A4%98%E5%85%AC%E7%A9%8D&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「法定盈餘公積」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"法定盈餘公積\");\nValue1 = GetField(\"LegalReserve\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「法定盈餘公積」。"
+  },
+  {
+    "name": "股利收入",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E5%88%A9%E6%94%B6%E5%85%A5&group=FFINANCE",
+    "head_description": "「損益表」中「股利收入」項目。壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"股利收入\");\nValue1 = GetField(\"InvestmentIncome\");\nValue1 = GetField(\"投資收入／股利收入\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「股利收入」項目。凡非以投資為營業項目者，其採用權益法之投資以外之金融資產獲配之現金股利屬之。\n壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "股東權益報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E6%9D%B1%E6%AC%8A%E7%9B%8A%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "台股，是財務比率表的「ROE(A)─稅後」項目。美股，是財務比率表上的「股東權益報酬率」項目。提供單季與年度資料。單位為%，例如：股東權益報酬率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"股東權益報酬率\");\nValue1 = GetField(\"ROE\");\nValue1 = GetField(\"ReturnOnEquity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股，是財務比率表的「ROE(A)─稅後」項目。美股，是財務比率表上的「股東權益報酬率」項目。提供單季與年度資料。單位為%，例如：股東權益報酬率為30%，則回傳30。"
+  },
+  {
+    "name": "股東權益總額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E6%9D%B1%E6%AC%8A%E7%9B%8A%E7%B8%BD%E9%A1%8D&group=FFINANCE",
+    "head_description": "「資產負債表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"股東權益總額\");\nValue1 = GetField(\"TotalEquity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「資產負債表」財務報表項目。凡全部資產減除全部負債後之餘額者屬之，包括資本、資本公積、保留盈餘（累積虧損）、權益調整及非控制權益等。"
+  },
+  {
+    "name": "股價自由現金流量比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E5%83%B9%E8%87%AA%E7%94%B1%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 股價 / 每股自由現金流量。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"股價自由現金流量比\");\nValue1 = GetField(\"Price／FCF\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 股價 / 每股自由現金流量。"
+  },
+  {
+    "name": "長期投資",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%95%B7%E6%9C%9F%E6%8A%95%E8%B3%87&group=FFINANCE",
+    "head_description": "資產負債表的4項資料加總 1.透過損益按公允價值衡量之金融資產－非流動 2.透過其他綜合損益按公允價值衡量之金融資產－非流動 3.按攤銷後成本衡量之金融資產－非流動 4.採權益法之長期股權投資",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"長期投資\");\nValue1 = GetField(\"Long－TermInvestment\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股:百萬；美股:百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "資產負債表的4項資料加總1.透過損益按公允價值衡量之金融資產－非流動2.透過其他綜合損益按公允價值衡量之金融資產－非流動3.按攤銷後成本衡量之金融資產－非流動4.採權益法之長期股權投資"
+  },
+  {
+    "name": "長期負債",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%95%B7%E6%9C%9F%E8%B2%A0%E5%82%B5&group=FFINANCE",
+    "head_description": "台股:「資產負債表」中「非流動負債」項目。美股:「資產負債表」中「非流動負債」項內「長期借款」項目。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"長期負債\");\nValue1 = GetField(\"Long－TermLiabilities\");\nValue1 = GetField(\"非流動負債\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股:「資產負債表」中「非流動負債」項目。美股:「資產負債表」中「非流動負債」項內「長期借款」項目。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "長期資金適合率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%95%B7%E6%9C%9F%E8%B3%87%E9%87%91%E9%81%A9%E5%90%88%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「長期資金適合率」欄位。提供單季與年度資料。單位為%，例如：長期資金適合率為160%，則回傳160。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"長期資金適合率\");\nValue1 = GetField(\"(L－TLiab.+SE)／FA％\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「長期資金適合率」欄位。提供單季與年度資料。單位為%，例如：長期資金適合率為160%，則回傳160。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "長短期負債比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%95%B7%E7%9F%AD%E6%9C%9F%E8%B2%A0%E5%82%B5%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "計算公式: 流動負債／負債總額 *100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"長短期負債比率\");\nValue1 = GetField(\"LongTermDebt/ShortTermDebt\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 流動負債／負債總額 *100%。"
+  },
+  {
+    "name": "流動比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B5%81%E5%8B%95%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「流動比率」欄位。提供季度與年度資料。單位為%，例如：流動比率為250%，則回傳250。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"流動比率\");\nValue1 = GetField(\"CurrentRatio\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「流動比率」欄位。提供季度與年度資料。單位為%，例如：流動比率為250%，則回傳250。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "流動負債",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B5%81%E5%8B%95%E8%B2%A0%E5%82%B5&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動負債」項目。台股中金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"流動負債\");\nValue1 = GetField(\"TotalCurrentLiabilities\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「資產負債表」中「流動負債」項目。凡將於一年或一營業週期內（以較長者為準）以流動資產償還或再轉為流動負債皆屬之。\n台股中金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "流動資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B5%81%E5%8B%95%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項目。台股中金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"流動資產\");\nValue1 = GetField(\"TotalCurrentAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「資產負債表」中「流動資產」項目。凡現金及其他將於一年或一營業週期內（以較長者為準）變現、出售或耗用之資產皆屬之。\n台股中金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "盈餘成長係數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9B%88%E9%A4%98%E6%88%90%E9%95%B7%E4%BF%82%E6%95%B8&group=FFINANCE",
+    "head_description": "計算公式: 本益比 / 盈餘成長率 *100%，其中盈餘成長率 = (1-股利合計/EPS) * ROE。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"盈餘成長係數\");\nValue1 = GetField(\"PEG\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 本益比 / 盈餘成長率 *100%，其中盈餘成長率 = (1-股利合計/EPS) * ROE。"
+  },
+  {
+    "name": "盈餘殖利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9B%88%E9%A4%98%E6%AE%96%E5%88%A9%E7%8E%87&group=FFINANCE",
+    "head_description": "計算公式: 稅前息前淨利 / (總市值+負債總額)*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"盈餘殖利率\");\nValue1 = GetField(\"EarningYield\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 稅前息前淨利 / (總市值+負債總額)*100%。"
+  },
+  {
+    "name": "盈餘營收成長率比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9B%88%E9%A4%98%E7%87%9F%E6%94%B6%E6%88%90%E9%95%B7%E7%8E%87%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 本期稅後淨利年成長率 / 營業收入淨額年成長率 *100%提供單季與年度資料。單位為%，例如：欄位數值為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"盈餘營收成長率比\");\nValue1 = GetField(\"EarningGrowth／SalesGrowth\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 本期稅後淨利年成長率 / 營業收入淨額年成長率 *100%提供單季與年度資料。單位為%，例如：欄位數值為25%，則回傳25。"
+  },
+  {
+    "name": "研發費用",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A0%94%E7%99%BC%E8%B2%BB%E7%94%A8&group=FFINANCE",
+    "head_description": "「損益表」中「研究發展費」項目。金融、壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"研發費用\");\nValue1 = GetField(\"OperatingExpense－R＆D\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「研究發展費」項目。金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "研發費用率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A0%94%E7%99%BC%E8%B2%BB%E7%94%A8%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「研究發展費用率」欄位。提供單季與年度資料。單位為%，例如：研發費用率為15%，則回傳15。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"研發費用率\");\nValue1 = GetField(\"R＆D ％\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「研究發展費用率」欄位。提供單季與年度資料。單位為%，例如：研發費用率為15%，則回傳15。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "背書保證佔淨值比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%83%8C%E6%9B%B8%E4%BF%9D%E8%AD%89%E4%BD%94%E6%B7%A8%E5%80%BC%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式：背書保證餘額／股東權證總額*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"背書保證佔淨值比\");\nValue1 = GetField(\"％OfEndorsementsGuarantees\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式：背書保證餘額／股東權證總額*100%。"
+  },
+  {
+    "name": "背書保證餘額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%83%8C%E6%9B%B8%E4%BF%9D%E8%AD%89%E9%A4%98%E9%A1%8D&group=FFINANCE",
+    "head_description": "背書保證累計餘額。資料來源為公開資訊觀測站。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"背書保證餘額\");\nValue1 = GetField(\"BalanceOfEndorsementsGuarantees\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "仟元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "背書保證累計餘額。資料來源為公開資訊觀測站。"
+  },
+  {
+    "name": "負債及股東權益總額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%A0%E5%82%B5%E5%8F%8A%E8%82%A1%E6%9D%B1%E6%AC%8A%E7%9B%8A%E7%B8%BD%E9%A1%8D&group=FFINANCE",
+    "head_description": "「資產負債表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"負債及股東權益總額\");\nValue1 = GetField(\"TotalLiabilities＆Equity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」財務報表項目。"
+  },
+  {
+    "name": "負債比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%A0%E5%82%B5%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「負債比率」欄位。提供季度與年度資料。單位為%，例如：負債比率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"負債比率\");\nValue1 = GetField(\"LiabilitiesRatio\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「負債比率」欄位。提供季度與年度資料。單位為%，例如：負債比率為30%，則回傳30。"
+  },
+  {
+    "name": "負債對淨值比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%A0%E5%82%B5%E5%B0%8D%E6%B7%A8%E5%80%BC%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「總負債/總淨值」欄位。提供季度與年度資料。單位為％，例如：負債對淨值比率為60%，則回傳60。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"負債對淨值比率\");\nValue1 = GetField(\"DebtEquityRatio\");\nValue1 = GetField(\"總負債/總淨值\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「總負債/總淨值」欄位。提供季度與年度資料。單位為％，例如：負債對淨值比率為60%，則回傳60。"
+  },
+  {
+    "name": "負債總額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%A0%E5%82%B5%E7%B8%BD%E9%A1%8D&group=FFINANCE",
+    "head_description": "「資產負債表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"負債總額\");\nValue1 = GetField(\"TotalLiabilities\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「資產負債表」財務報表項目。凡過去交易或其他事項所發生之經濟義務，能以貨幣衡量，並將以提供勞務或支付經濟資源之方式償付者，包括流動負債、存款、匯款及金融債券、央行及同業融資、長期負債、其他負債等。"
+  },
+  {
+    "name": "借款依存度",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%80%9F%E6%AC%BE%E4%BE%9D%E5%AD%98%E5%BA%A6&group=FFINANCE",
+    "head_description": "財務比率表上的「借款依存度」欄位。提供單季與年度資料。單位為%，例如：借款依存度為150%，則回傳150。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"借款依存度\");\nValue1 = GetField(\"Debt／Eqity ％\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「借款依存度」欄位。提供單季與年度資料。單位為%，例如：借款依存度為150%，則回傳150。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "員工平均營業額(千元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%93%A1%E5%B7%A5%E5%B9%B3%E5%9D%87%E7%87%9F%E6%A5%AD%E9%A1%8D%28%E5%8D%83%E5%85%83%29&group=FFINANCE",
+    "head_description": "財務比率表內的「每人營收」欄位。計算公式  : 營業收入／平均員工人數",
+    "rank": "千元",
+    "code": "Value1 = GetField(\"員工平均營業額(千元)\");\nValue1 = GetField(\"SalesPerEmployee\");\nValue1 = GetField(\"每人營收\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表內的「每人營收」欄位。計算公式  : 營業收入／平均員工人數"
+  },
+  {
+    "name": "庫藏股票帳面值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%BA%AB%E8%97%8F%E8%82%A1%E7%A5%A8%E5%B8%B3%E9%9D%A2%E5%80%BC&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「庫藏股票帳面值」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"庫藏股票帳面值\");\nValue1 = GetField(\"TreasuryStock\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「庫藏股票帳面值」。"
+  },
+  {
+    "name": "特別股股本",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%89%B9%E5%88%A5%E8%82%A1%E8%82%A1%E6%9C%AC&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「特別股股本」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"特別股股本\");\nValue1 = GetField(\"CapitalPreferredStocks\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "億元。",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「特別股股本」。"
+  },
+  {
+    "name": "特別盈餘公積",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%89%B9%E5%88%A5%E7%9B%88%E9%A4%98%E5%85%AC%E7%A9%8D&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「特別盈餘公積」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"特別盈餘公積\");\nValue1 = GetField(\"AppropriatedRetainedEarnings\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「特別盈餘公積」。"
+  },
+  {
+    "name": "退休金準備",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%80%80%E4%BC%91%E9%87%91%E6%BA%96%E5%82%99&group=FFINANCE",
+    "head_description": "「資產負債表」中「應計退休金負債」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"退休金準備\");\nValue1 = GetField(\"AccruedPensionPay\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「應計退休金負債」項目。"
+  },
+  {
+    "name": "停業部門損益",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%81%9C%E6%A5%AD%E9%83%A8%E9%96%80%E6%90%8D%E7%9B%8A&group=FFINANCE",
+    "head_description": "「損益表」中「停業單位損益」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"停業部門損益\");\nValue1 = GetField(\"DiscontinuedDepartmentsGainLoss\");\nValue1 = GetField(\"停業單位損益\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「停業單位損益」項目。\n凡停業單位之稅後損益，及構成停業單位之資產或處分群組於按公允價值減出售成本衡量時或於處分時所認列之稅後利益或損失屬之。其為正數，表示停業單位利益之數；其為負數，表示停業單位損失之數。"
+  },
+  {
+    "name": "常續性利益(稅後)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%B8%B8%E7%BA%8C%E6%80%A7%E5%88%A9%E7%9B%8A%28%E7%A8%85%E5%BE%8C%29&group=FFINANCE",
+    "head_description": "「損益表」中「常續性稅後淨利」項目。",
+    "rank": "稅後",
+    "code": "Value1 = GetField(\"常續性利益(稅後)\");\nValue1 = GetField(\"NetIncome－ExcDispo\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「常續性稅後淨利」項目。"
+  },
+  {
+    "name": "推銷費用",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8E%A8%E9%8A%B7%E8%B2%BB%E7%94%A8&group=FFINANCE",
+    "head_description": "「損益表」中「推銷費用」項目。金融、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"推銷費用\");\nValue1 = GetField(\"OperatingExpense－Promotion\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「推銷費用」項目。凡各項行銷費用屬之。\n金融、證券股不適用此欄位。"
+  },
+  {
+    "name": "淨值成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B7%A8%E5%80%BC%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「淨值成長率」欄位。表示當期股東權益總額較去年同期股東權益總額的成長幅度。提供季度與年度資料。單位為%，例如：淨值成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"淨值成長率\");\nValue1 = GetField(\"YOY％－TotalEquity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「淨值成長率」欄位。表示當期股東權益總額較去年同期股東權益總額的成長幅度。\n股東權益＝資產總額－負債總額，也稱為淨值或凈資產。\n淨值成長率，提供季度與年度資料。\n例如：今年第一季股東權益總額100億、去年第一季股東權益總額80億，淨值成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "淨值自由現金流量比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B7%A8%E5%80%BC%E8%87%AA%E7%94%B1%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 股東權益總額 / 自由現金流量*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"淨值自由現金流量比\");\nValue1 = GetField(\"NetValue／FCF\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 股東權益總額 / 自由現金流量*100%。"
+  },
+  {
+    "name": "淨值週轉率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B7%A8%E5%80%BC%E9%80%B1%E8%BD%89%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「淨值週轉率(次)」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"淨值週轉率\");\nValue1 = GetField(\"EquityTurnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「淨值週轉率(次)」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "淨營業週期",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B7%A8%E7%87%9F%E6%A5%AD%E9%80%B1%E6%9C%9F&group=FFINANCE",
+    "head_description": "財務比率表上的\"淨營業週期(日)\"欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"淨營業週期\");\nValue1 = GetField(\"NetOperatingCycle\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "天",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的\"淨營業週期(日)\"欄位。"
+  },
+  {
+    "name": "理財活動之現金流量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%90%86%E8%B2%A1%E6%B4%BB%E5%8B%95%E4%B9%8B%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F&group=FFINANCE",
+    "head_description": "現金流量表上的「籌資活動之現金流量」欄位。正值表示現金流入，負值表示現金流出。提供單季與年度資料。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"理財活動之現金流量\");\nValue1 = GetField(\"CashFlowFinancing\");\nValue1 = GetField(\"CFF\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "現金流量表上的「籌資活動之現金流量」欄位。正值表示現金流入，負值表示現金流出。提供單季與年度資料。"
+  },
+  {
+    "name": "現金及約當現金",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E9%87%91%E5%8F%8A%E7%B4%84%E7%95%B6%E7%8F%BE%E9%87%91&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「現金及約當現金」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"現金及約當現金\");\nValue1 = GetField(\"CashCashEquivalent\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「現金及約當現金」項目。"
+  },
+  {
+    "name": "現金再投資％",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E9%87%91%E5%86%8D%E6%8A%95%E8%B3%87%EF%BC%85&group=FFINANCE",
+    "head_description": "財務比率表上的\"現金再投資%\"欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"現金再投資％\");\nValue1 = GetField(\"CashReinvestmentRatio\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的\"現金再投資%\"欄位。"
+  },
+  {
+    "name": "現金流量允當％",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E5%85%81%E7%95%B6%EF%BC%85&group=FFINANCE",
+    "head_description": "計算公式 : 最近5年度來自營運之現金流量/ 最近5年度(長期投資(新增)+固定資產(購置)+存貨(增)減+支付現金股利) *100%。只提供年度頻率資料。單位為%，例如：欄位數值105%，則回傳105。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"現金流量允當％\");\nValue1 = GetField(\"CFAdequacyRatio\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式 : 最近5年度來自營運之現金流量/ 最近5年度(長期投資(新增)+固定資產(購置)+存貨(增)減+支付現金股利) *100%。只提供年度頻率資料。單位為%，例如：欄位數值105%，則回傳105。"
+  },
+  {
+    "name": "現金流量比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「現金流量比率」欄位。提供單季與年度資料。例如：現金流量比率為30%，單位為%，則回傳30。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"現金流量比率\");\nValue1 = GetField(\"CFO ／CL ％\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「現金流量比率」欄位。提供單季與年度資料。例如：現金流量比率為30%，單位為%，則回傳30。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "現金派息比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E9%87%91%E6%B4%BE%E6%81%AF%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "計算公式: 現金股利 / 每股盈餘*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"現金派息比率\");\nValue1 = GetField(\"CurrentPayoutRatio\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 現金股利 / 每股盈餘*100%。"
+  },
+  {
+    "name": "處分投資利得",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%99%95%E5%88%86%E6%8A%95%E8%B3%87%E5%88%A9%E5%BE%97&group=FFINANCE",
+    "head_description": "「損益表」中「處分投資利益」項目。金融、壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"處分投資利得\");\nValue1 = GetField(\"Gain－DisposalInvestment\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「處分投資利益」項目。凡非以投資為營業項目者，處分金融資產（透過損益按公允價值衡量之金融資產除外）所獲之利益等屬之。\n金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "處分投資損失",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%99%95%E5%88%86%E6%8A%95%E8%B3%87%E6%90%8D%E5%A4%B1&group=FFINANCE",
+    "head_description": "「損益表」中「處分投資損失」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"處分投資損失\");\nValue1 = GetField(\"Loss－DisposalInvestment\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「處分投資損失」項目。凡非以投資為營業項目者，處分金融資產（透過損益按公允價值衡量之金融資產除外）產生之損失等屬之。\n金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "處分資產利得",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%99%95%E5%88%86%E8%B3%87%E7%94%A2%E5%88%A9%E5%BE%97&group=FFINANCE",
+    "head_description": "「損益表」中「處分不動產、廠房及設備利益」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"處分資產利得\");\nValue1 = GetField(\"GainsDisposalFixedAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「處分不動產、廠房及設備利益」項目。凡不動產、廠房及設備變賣、交換等所獲得之利益屬之。"
+  },
+  {
+    "name": "處分資產損失",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%99%95%E5%88%86%E8%B3%87%E7%94%A2%E6%90%8D%E5%A4%B1&group=FFINANCE",
+    "head_description": "「損益表」中「處分不動產、廠房及設備損失」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"處分資產損失\");\nValue1 = GetField(\"Loss－DisposalFixedAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「處分不動產、廠房及設備損失」項目。凡不動產、廠房及設備變賣、交換等所產生之損失屬之。"
+  },
+  {
+    "name": "速動比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%80%9F%E5%8B%95%E6%AF%94%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「速動比率」欄位。提供季度與年度資料。單位為%，例如：速動比率為150%，則回傳150。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"速動比率\");\nValue1 = GetField(\"AcidTest\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「速動比率」欄位。提供季度與年度資料。單位為%，例如：速動比率為150%，則回傳150。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "普通股股本",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%99%AE%E9%80%9A%E8%82%A1%E8%82%A1%E6%9C%AC&group=FFINANCE",
+    "head_description": "台股:「資產負債表」股東權益項目中的「普通股股本」。美股:「資產負債表」股東權益項目中的「普通股股東權益」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"普通股股本\");\nValue1 = GetField(\"CapitalCommonStocks\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：億元。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股:「資產負債表」股東權益項目中的「普通股股本」。美股:「資產負債表」股東權益項目中的「普通股股東權益」。"
+  },
+  {
+    "name": "無形資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%84%A1%E5%BD%A2%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "台股:「資產負債表」中「非流動資產」項內「其他無形資產淨額」項目。美股:「資產負債表」中「非流動資產」項內「商譽與無形資產淨額」項目。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"無形資產\");\nValue1 = GetField(\"IntangibleAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股:「資產負債表」中「非流動資產」項內「其他無形資產淨額」項目。美股:「資產負債表」中「非流動資產」項內「商譽與無形資產淨額」項目。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "短期投資",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9F%AD%E6%9C%9F%E6%8A%95%E8%B3%87&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「\"透過損益按公允價值衡量之金融資產－流動\" + \"透過其他綜合損益按公允價值衡量之金融資產－流動\" + \"按攤銷後成本衡量之金融資產－流動\"」三個項目加總。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"短期投資\");\nValue1 = GetField(\"MarketableSecurity\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「\"透過損益按公允價值衡量之金融資產－流動\" + \"透過其他綜合損益按公允價值衡量之金融資產－流動\" + \"按攤銷後成本衡量之金融資產－流動\"」三個項目加總。"
+  },
+  {
+    "name": "短期借支",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9F%AD%E6%9C%9F%E5%80%9F%E6%94%AF&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「資金貸予他人－流動」項目。金融、壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"短期借支\");\nValue1 = GetField(\"LoanToOther－ShortTerm\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「資金貸予他人－流動」項目。金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "短期借款",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9F%AD%E6%9C%9F%E5%80%9F%E6%AC%BE&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動負債」項內「短期借款」項目。金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"短期借款\");\nValue1 = GetField(\"Short－TermBorrowing\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動負債」項內「短期借款」項目。金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "稅前息前折舊前淨利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%89%8D%E6%81%AF%E5%89%8D%E6%8A%98%E8%88%8A%E5%89%8D%E6%B7%A8%E5%88%A9&group=FFINANCE",
+    "head_description": "「損益表」中「稅前息前折舊前淨利」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅前息前折舊前淨利\");\nValue1 = GetField(\"EBITDA\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「損益表」中「稅前息前折舊前淨利」項目。"
+  },
+  {
+    "name": "稅前息前淨利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%89%8D%E6%81%AF%E5%89%8D%E6%B7%A8%E5%88%A9&group=FFINANCE",
+    "head_description": "「損益表」中「稅前息前淨利」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅前息前淨利\");\nValue1 = GetField(\"EBIT\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「稅前息前淨利」項目。"
+  },
+  {
+    "name": "稅前淨利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%89%8D%E6%B7%A8%E5%88%A9&group=FFINANCE",
+    "head_description": "「損益表」中「稅前淨利」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅前淨利\");\nValue1 = GetField(\"Pre－TaxIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「損益表」中「稅前淨利」項目。\n凡營業利益（或損失）加上營業外利益（或損失）後之餘額屬之。其為正數，表示本期稅前淨利之數；其為負數，表示本期稅前淨損之數。"
+  },
+  {
+    "name": "稅前淨利成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%89%8D%E6%B7%A8%E5%88%A9%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「稅前淨利成長率」欄位。表示當期稅前淨利較去年同期稅前淨利的成長幅度。提供單季與年度資料。單位為%，例如：稅前淨利成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅前淨利成長率\");\nValue1 = GetField(\"YOY％－Pre－TaxIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「稅前淨利成長率」欄位。表示當期稅前淨利較去年同期稅前淨利的成長幅度。\n提供單季與年度資料。\n例如：稅前淨利成長率為25%，則回傳25。\n例如：今年第一季稅前淨利100億、去年第一季稅前淨利80億，稅前淨利成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "稅前淨利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%89%8D%E6%B7%A8%E5%88%A9%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「稅前淨利率」欄位。提供單季與年度資料。單位為%，例如：稅前淨利率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅前淨利率\");\nValue1 = GetField(\"Pre－TaxProfitMargin\");\nValue1 = GetField(\"Pre－TaxIncomeMargin\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「稅前淨利率」欄位。提供單季與年度資料。單位為%，例如：稅前淨利率為30%，則回傳30。"
+  },
+  {
+    "name": "稅後淨利成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%BE%8C%E6%B7%A8%E5%88%A9%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「稅後淨利成長率」欄位。表示當期稅後淨利較去年同期稅後淨利的成長幅度。提供單季與年度資料。單位為%，例如：稅後淨利成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅後淨利成長率\");\nValue1 = GetField(\"YOY％－NetIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「稅後淨利成長率」欄位。表示當期稅後淨利較去年同期稅後淨利的成長幅度。\n提供單季與年度資料。\n例如：今年第一季稅後淨利100億、去年第一季稅後淨利80億，稅後淨利成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "稅後淨利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%85%E5%BE%8C%E6%B7%A8%E5%88%A9%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「稅後淨利率」欄位。提供單季與年度資料。單位為%，例如：稅後淨利率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稅後淨利率\");\nValue1 = GetField(\"ProfitMargin\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「稅後淨利率」欄位。提供單季與年度資料。單位為%，例如：稅後淨利率為30%，則回傳30。"
+  },
+  {
+    "name": "稀釋後每股淨利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%A8%80%E9%87%8B%E5%BE%8C%E6%AF%8F%E8%82%A1%E6%B7%A8%E5%88%A9&group=FFINANCE",
+    "head_description": "損益表的\"稀釋後每股盈餘\"項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"稀釋後每股淨利\");\nValue1 = GetField(\"DilutedEPS\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "損益表的\"稀釋後每股盈餘\"項目。稀釋每股盈餘是假設所有潛在股份都被轉換成普通股，以此計算出的每股收益數字。它是用來衡量公司實際每股盈利可能降低的情況，因為潛在股份的發行會稀釋公司的盈利。"
+  },
+  {
+    "name": "當期財報截止日",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%95%B6%E6%9C%9F%E8%B2%A1%E5%A0%B1%E6%88%AA%E6%AD%A2%E6%97%A5&group=FFINANCE",
+    "head_description": "回傳每個公司的財報截止日，格式為YYYYMMDD.美股股票才支援此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"當期財報截止日\");\nValue1 = GetField(\"PeriodEndDate\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "回傳每個公司的財報截止日，格式為YYYYMMDD.美股股票才支援此欄位。"
+  },
+  {
+    "name": "經常利益",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B6%93%E5%B8%B8%E5%88%A9%E7%9B%8A&group=FFINANCE",
+    "head_description": "「損益表」中「繼續營業單位損益」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"經常利益\");\nValue1 = GetField(\"OrdinaryIncome\");\nValue1 = GetField(\"繼續營業單位損益\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「繼續營業單位損益」項目。\n凡本期繼續營業單位稅前淨利（或淨損）扣除所得稅費用（或利益）後之餘額屬之。其為正數，表示繼續營業單位本期稅後淨利之數；其為負數，表示繼續營業單位本期稅後淨損之數。"
+  },
+  {
+    "name": "誠信指標",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%AA%A0%E4%BF%A1%E6%8C%87%E6%A8%99&group=FFINANCE",
+    "head_description": "",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"誠信指標\");\nValue1 = GetField(\"CreditIndicator\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "= S0104327"
+  },
+  {
+    "name": "資本公積",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E6%9C%AC%E5%85%AC%E7%A9%8D&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「資本公積合計」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資本公積\");\nValue1 = GetField(\"CapitalReserve\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「資本公積合計」。"
+  },
+  {
+    "name": "資本支出金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E9%87%91%E9%A1%8D&group=FFINANCE",
+    "head_description": "現金流量表內的\"購置不動產廠房設備（含預付）－CFI\"項目。現金流量表以負值表示支出。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資本支出金額\");\nValue1 = GetField(\"CapitalExpenditure\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "現金流量表內的\"購置不動產廠房設備（含預付）－CFI\"項目。現金流量表以負值表示支出。"
+  },
+  {
+    "name": "資本支出營收比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E7%87%9F%E6%94%B6%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式 : 現金流量表中 購置不動產廠房設備（含預付）/營業收入淨額*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資本支出營收比\");\nValue1 = GetField(\"Capitalexpenditure／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式 : 現金流量表中 購置不動產廠房設備（含預付）/營業收入淨額*100%。"
+  },
+  {
+    "name": "資金貸放佔淨值比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E9%87%91%E8%B2%B8%E6%94%BE%E4%BD%94%E6%B7%A8%E5%80%BC%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式：資金貸放餘額／股東權證總額*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資金貸放佔淨值比\");\nValue1 = GetField(\"％OfLoanBalance\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式：資金貸放餘額／股東權證總額*100%。"
+  },
+  {
+    "name": "資金貸放餘額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E9%87%91%E8%B2%B8%E6%94%BE%E9%A4%98%E9%A1%8D&group=FFINANCE",
+    "head_description": "資金貸放餘額。資料來源為公開資訊觀測站。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資金貸放餘額\");\nValue1 = GetField(\"LoanBalance\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "仟元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "資金貸放餘額。資料來源為公開資訊觀測站。"
+  },
+  {
+    "name": "資產報酬率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E7%94%A2%E5%A0%B1%E9%85%AC%E7%8E%87&group=FFINANCE",
+    "head_description": "台股，是財務比率表的「ROA(A)稅後息前」項目。美股，是財務比率表上的「資產報酬率」項目。提供單季與年度資料。單位為%，例如：資產報酬率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資產報酬率\");\nValue1 = GetField(\"ROA\");\nValue1 = GetField(\"ReturnOnAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "台股，是財務比率表的「ROA(A)稅後息前」項目。美股，是財務比率表上的「資產報酬率」項目。提供單季與年度資料。單位為%，例如：資產報酬率為30%，則回傳30。"
+  },
+  {
+    "name": "資產總額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E7%94%A2%E7%B8%BD%E9%A1%8D&group=FFINANCE",
+    "head_description": "「資產負債表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"資產總額\");\nValue1 = GetField(\"TotalAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「資產負債表」財務報表項目。凡透過各種交易或其他事項所獲得或控制之經濟資源，能以貨幣衡量並預期未來能提供經濟效益者。"
+  },
+  {
+    "name": "預付費用及預付款",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%A0%90%E4%BB%98%E8%B2%BB%E7%94%A8%E5%8F%8A%E9%A0%90%E4%BB%98%E6%AC%BE&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「預付費用及預付款」項目。金融股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"預付費用及預付款\");\nValue1 = GetField(\"Prepaid＆Advance\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「預付費用及預付款」項目。金融股不適用此欄位。"
+  },
+  {
+    "name": "預收股款",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%A0%90%E6%94%B6%E8%82%A1%E6%AC%BE&group=FFINANCE",
+    "head_description": "「資產負債表」股東權益項目中的「預收股款」。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"預收股款\");\nValue1 = GetField(\"Proceeds－NewIssued\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」股東權益項目中的「預收股款」。"
+  },
+  {
+    "name": "預收款項",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%A0%90%E6%94%B6%E6%AC%BE%E9%A0%85&group=FFINANCE",
+    "head_description": "「資產負債表」中「預收款項」項目。金融股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"預收款項\");\nValue1 = GetField(\"AdvancesCustomers\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「預收款項」項目。金融股不適用此欄位。"
+  },
+  {
+    "name": "管理+銷售費用／營收",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%AE%A1%E7%90%86%2B%E9%8A%B7%E5%94%AE%E8%B2%BB%E7%94%A8%EF%BC%8F%E7%87%9F%E6%94%B6&group=FFINANCE",
+    "head_description": "計算公式 : (營業費用的推銷費用 + 管理費用) / 營業收入淨額*100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"管理+銷售費用／營收\");\nValue1 = GetField(\"OperatingExpense－ADM＆Promotion／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式 : (營業費用的推銷費用 + 管理費用) / 營業收入淨額*100%。"
+  },
+  {
+    "name": "管理費用",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%AE%A1%E7%90%86%E8%B2%BB%E7%94%A8&group=FFINANCE",
+    "head_description": "「損益表」中「管理費用」項目。金融、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"管理費用\");\nValue1 = GetField(\"OperatingExpense－ADM\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「管理費用」項目。凡各項管理費用屬之。\n金融、證券股不適用此欄位。"
+  },
+  {
+    "name": "管理費用／季營收",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%AE%A1%E7%90%86%E8%B2%BB%E7%94%A8%EF%BC%8F%E5%AD%A3%E7%87%9F%E6%94%B6&group=FFINANCE",
+    "head_description": "計算公式: 營業費用的管理費用/營業收入淨額*100%。提供單季與年度資料。單位為%，例如：欄位數值5%，則回傳5。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"管理費用／季營收\");\nValue1 = GetField(\"OperatingExpense－ADM／Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 營業費用的管理費用/營業收入淨額*100%。提供單季與年度資料。單位為%，例如：欄位數值5%，則回傳5。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "遞延所得稅",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%81%9E%E5%BB%B6%E6%89%80%E5%BE%97%E7%A8%85&group=FFINANCE",
+    "head_description": "「資產負債表」中「遞延所得稅負債」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"遞延所得稅\");\nValue1 = GetField(\"DeferredTax\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「遞延所得稅負債」項目。"
+  },
+  {
+    "name": "遞延貸項",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%81%9E%E5%BB%B6%E8%B2%B8%E9%A0%85&group=FFINANCE",
+    "head_description": "「資產負債表」中「遞延貸項」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"遞延貸項\");\nValue1 = GetField(\"DeferredCreditBalances\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「遞延貸項」項目。"
+  },
+  {
+    "name": "遞延資產",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%81%9E%E5%BB%B6%E8%B3%87%E7%94%A2&group=FFINANCE",
+    "head_description": "「資產負債表」中「非流動資產」項內的「遞延資產合計」項目。金融、壽險、產險、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"遞延資產\");\nValue1 = GetField(\"DeferredAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「非流動資產」項內的「遞延資產合計」項目。金融、壽險、產險、證券股不適用此欄位。"
+  },
+  {
+    "name": "銷售費用比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%8A%B7%E5%94%AE%E8%B2%BB%E7%94%A8%E6%AF%94&group=FFINANCE",
+    "head_description": "計算公式: 銷售費用/營業成本提供單季與年度資料。單位為%，例如：欄位數值5%，則回傳5。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"銷售費用比\");\nValue1 = GetField(\"SellingExpanseRatio／CostOfGoodsSold\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 銷售費用/營業成本提供單季與年度資料。單位為%，例如：欄位數值5%，則回傳5。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "應付商業本票",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%87%89%E4%BB%98%E5%95%86%E6%A5%AD%E6%9C%AC%E7%A5%A8&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動負債」項內「應付商業本票∕承兌匯票」項目。金融、壽險、產險股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"應付商業本票\");\nValue1 = GetField(\"BillsIssued\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動負債」項內「應付商業本票∕承兌匯票」項目。金融、壽險、產險股不適用此欄位。"
+  },
+  {
+    "name": "應付帳款及票據",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%87%89%E4%BB%98%E5%B8%B3%E6%AC%BE%E5%8F%8A%E7%A5%A8%E6%93%9A&group=FFINANCE",
+    "head_description": "「資產負債表」中「應付帳款及票據」項目。金融股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"應付帳款及票據\");\nValue1 = GetField(\"AccountsPayable＆NotesPayable\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「應付帳款及票據」項目。金融股不適用此欄位。"
+  },
+  {
+    "name": "應付帳款付現天數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%87%89%E4%BB%98%E5%B8%B3%E6%AC%BE%E4%BB%98%E7%8F%BE%E5%A4%A9%E6%95%B8&group=FFINANCE",
+    "head_description": "財務比率表上的「應付帳款付現天數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"應付帳款付現天數\");\nValue1 = GetField(\"Days－A／P Turnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "天",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「應付帳款付現天數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "應收帳款及票據",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%87%89%E6%94%B6%E5%B8%B3%E6%AC%BE%E5%8F%8A%E7%A5%A8%E6%93%9A&group=FFINANCE",
+    "head_description": "「資產負債表」中「流動資產」項內的「應收帳款及票據」項目。銀行與金控股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"應收帳款及票據\");\nValue1 = GetField(\"AccountsReceivable＆NotesReceivable\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「資產負債表」中「流動資產」項內的「應收帳款及票據」項目。銀行與金控股不適用此欄位。"
+  },
+  {
+    "name": "應收帳款週轉次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%87%89%E6%94%B6%E5%B8%B3%E6%AC%BE%E9%80%B1%E8%BD%89%E6%AC%A1%E6%95%B8&group=FFINANCE",
+    "head_description": "財務比率表上的\"應收帳款週轉次\"欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"應收帳款週轉次數\");\nValue1 = GetField(\"AccountsReceivablesTurnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的\"應收帳款週轉次\"欄位。"
+  },
+  {
+    "name": "應收帳款週轉率(次)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%87%89%E6%94%B6%E5%B8%B3%E6%AC%BE%E9%80%B1%E8%BD%89%E7%8E%87%28%E6%AC%A1%29&group=FFINANCE",
+    "head_description": "財務比率表上的「應收帳款週轉次」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "次",
+    "code": "Value1 = GetField(\"應收帳款週轉率(次)\");\nValue1 = GetField(\"AccountsReceivableNotesReceivableTurnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「應收帳款週轉次」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "營收成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%94%B6%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「營收成長率」欄位。表示當期營收較去年同期營收的成長幅度。提供單季與年度資料。單位為%，例如：營收成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營收成長率\");\nValue1 = GetField(\"YOY％－Sales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「營收成長率」欄位。表示當期營收較去年同期營收的成長幅度。\n提供單季與年度資料。\n例如：今年第一季營收100億、去年第一季營收80億，營收成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "營業毛利",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E6%AF%9B%E5%88%A9&group=FFINANCE",
+    "head_description": "「損益表」中「營業毛利」項目。台股中金融、證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業毛利\");\nValue1 = GetField(\"GrossProfit\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「損益表」中「營業毛利」項目。台股中金融、證券股不適用此欄位。"
+  },
+  {
+    "name": "營業毛利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E6%AF%9B%E5%88%A9%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「營業毛利率」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。單位是％，例如：營業毛利率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業毛利率\");\nValue1 = GetField(\"GrossMargin\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「營業毛利率」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。單位是％，例如：營業毛利率為30%，則回傳30。"
+  },
+  {
+    "name": "營業外收入及支出",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E5%A4%96%E6%94%B6%E5%85%A5%E5%8F%8A%E6%94%AF%E5%87%BA&group=FFINANCE",
+    "head_description": "「綜合損益表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業外收入及支出\");\nValue1 = GetField(\"NonOperatingIncome&Expense\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「綜合損益表」財務報表項目。"
+  },
+  {
+    "name": "營業外收入合計",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E5%A4%96%E6%94%B6%E5%85%A5%E5%90%88%E8%A8%88&group=FFINANCE",
+    "head_description": "「損益表」中「其他收入」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業外收入合計\");\nValue1 = GetField(\"TotalNonOperatingIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「其他收入」項目。凡投資性不動產收入、租賃收入、代理收入及處分投資性不動產利益等屬之。"
+  },
+  {
+    "name": "營業成本",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E6%88%90%E6%9C%AC&group=FFINANCE",
+    "head_description": "「損益表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業成本\");\nValue1 = GetField(\"CostOfGoodsSold\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "凡銷售貨物、提供勞務及金融保險業務等各項成本皆屬之。\n台股:「損益表」中的「營業成本」。\n美股:「損益表」中「銷貨成本」項目。\n台股中金融、證券股不適用此欄位。"
+  },
+  {
+    "name": "營業收入淨額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E6%94%B6%E5%85%A5%E6%B7%A8%E9%A1%8D&group=FFINANCE",
+    "head_description": "「損益表」財務報表項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業收入淨額\");\nValue1 = GetField(\"NetSales\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "損益表內的項目。凡銷售貨物、供應勞務及金融保險服務等所獲得之收入皆屬之。\n台股:\n一般產業:「營業收入淨額」\n金融股:「利息淨收益+利息以外淨損益」\n壽險股:「營業收入」\n證券股:「收益合計」美股:「營業收入總額」"
+  },
+  {
+    "name": "營業利益",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E5%88%A9%E7%9B%8A&group=FFINANCE",
+    "head_description": "「損益表」中「營業利益」項目。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業利益\");\nValue1 = GetField(\"OperatingIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股：百萬。美股：百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "「損益表」中「營業利益」項目。"
+  },
+  {
+    "name": "營業利益成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E5%88%A9%E7%9B%8A%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「營業利益成長率」欄位。表示當期營業利益較去年同期營業利益的成長幅度。提供單季與年度資料。單位為%，例如：營業利益成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業利益成長率\");\nValue1 = GetField(\"YOY％－OperatingIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「營業利益成長率」欄位。表示當期營業利益較去年同期營業利益的成長幅度。\n提供單季與年度資料。\n例如：今年第一季營業利益100億、去年第一季營業利益80億，營業利益成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "營業利益率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E5%88%A9%E7%9B%8A%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「營業利益率」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。單位為%，例如：營業利益率為30%，則回傳30。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業利益率\");\nValue1 = GetField(\"OperatingProfitMargin\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "財務比率表上的「營業利益率」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。單位為%，例如：營業利益率為30%，則回傳30。"
+  },
+  {
+    "name": "營業現金流量／營業利益",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E7%8F%BE%E9%87%91%E6%B5%81%E9%87%8F%EF%BC%8F%E7%87%9F%E6%A5%AD%E5%88%A9%E7%9B%8A&group=FFINANCE",
+    "head_description": "計算公式: 營業現金流量／營業利益*100%。提供單季與年度資料。單位為%，例如：數值為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業現金流量／營業利益\");\nValue1 = GetField(\"CFO／OperatingIncome\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式: 營業現金流量／營業利益*100%。提供單季與年度資料。單位為%，例如：數值為25%，則回傳25。"
+  },
+  {
+    "name": "營業費用",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E8%B2%BB%E7%94%A8&group=FFINANCE",
+    "head_description": "「損益表」中「營業費用」項目。證券股不適用此欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業費用\");\nValue1 = GetField(\"OperatingExpenses\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「營業費用」項目。凡配合產銷營運所發生之各項營業費用皆屬之。\n證券股不適用此欄位。"
+  },
+  {
+    "name": "營業費用率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E6%A5%AD%E8%B2%BB%E7%94%A8%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「營業費用率」欄位。提供單季與年度資料。單位為%，例如：營業費用率為15%，則回傳15。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營業費用率\");\nValue1 = GetField(\"Operating Exp. ％\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「營業費用率」欄位。提供單季與年度資料。單位為%，例如：營業費用率為15%，則回傳15。"
+  },
+  {
+    "name": "營運資金",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%87%9F%E9%81%8B%E8%B3%87%E9%87%91&group=FFINANCE",
+    "head_description": "計算公式  : 流動資產 - 流動負債",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"營運資金\");\nValue1 = GetField(\"WorkingCapital\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "台股:百萬；美股:百萬(美元)",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "計算公式  : 流動資產 - 流動負債"
+  },
+  {
+    "name": "總流通在外股數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B8%BD%E6%B5%81%E9%80%9A%E5%9C%A8%E5%A4%96%E8%82%A1%E6%95%B8&group=FFINANCE",
+    "head_description": "「資產負債表」中「流通在外股數」項目。美股股票才適用本欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"總流通在外股數\");\nValue1 = GetField(\"TotalSharesOutstanding\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "股",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "「資產負債表」中「流通在外股數」項目。美股股票才適用本欄位。"
+  },
+  {
+    "name": "總資產成長率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B8%BD%E8%B3%87%E7%94%A2%E6%88%90%E9%95%B7%E7%8E%87&group=FFINANCE",
+    "head_description": "財務比率表上的「總資產成長率」欄位。表示當期資產總額較去年同期資產總額的成長幅度。提供季度與年度資料。單位為%，例如：總資產成長率為25%，則回傳25。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"總資產成長率\");\nValue1 = GetField(\"YOY％－TotalAssets\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「總資產成長率」欄位。表示當期資產總額較去年同期資產總額的成長幅度。\n提供季度與年度資料。\n例如：今年第一季資產總額100億、去年第一季資產總額80億，總資產成長率為(100-80)/80*100% = 25%，單位為%，則回傳25。"
+  },
+  {
+    "name": "總資產週轉率(次)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B8%BD%E8%B3%87%E7%94%A2%E9%80%B1%E8%BD%89%E7%8E%87%28%E6%AC%A1%29&group=FFINANCE",
+    "head_description": "財務比率表上的「總資產週轉次數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "次",
+    "code": "Value1 = GetField(\"總資產週轉率(次)\");\nValue1 = GetField(\"TotalAssetTurnover\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "財務比率表上的「總資產週轉次數」欄位。提供單季與年度資料。不提供此欄位的公司，輸出值會以零表示。"
+  },
+  {
+    "name": "聯屬公司間未實現銷貨",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%81%AF%E5%B1%AC%E5%85%AC%E5%8F%B8%E9%96%93%E6%9C%AA%E5%AF%A6%E7%8F%BE%E9%8A%B7%E8%B2%A8&group=FFINANCE",
+    "head_description": "「損益表」中「聯屬公司已（未）實現銷貨利益」項目。不提供此欄位的公司，輸出值會以零表示。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"聯屬公司間未實現銷貨\");\nValue1 = GetField(\"UnearnedRelatedSale\");\n",
+    "field_category": [
+      "財務"
+    ],
+    "unit": "百萬",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "選股",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "「損益表」中「聯屬公司已（未）實現銷貨利益」項目。不提供此欄位的公司，輸出值會以零表示。"
+  }
+]

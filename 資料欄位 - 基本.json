@@ -1,0 +1,207 @@
+[
+  {
+    "name": "月營收",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%88%E7%87%9F%E6%94%B6&group=TBASIC",
+    "head_description": "每個月的營業收入。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"月營收\");\nValue1 = GetField(\"Sales\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "億",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤"
+    ],
+    "description": "每個月的營業收入。"
+  },
+  {
+    "name": "本益比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%AC%E7%9B%8A%E6%AF%94&group=TBASIC",
+    "head_description": "股票的本益比。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"本益比\");\nValue1 = GetField(\"PE\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(股票)",
+      "美(股票)"
+    ],
+    "description": "股票的本益比。計算公式為收盤價／每股稅後盈餘。台股的每股稅後盈餘＝近四季稅後盈餘／發行參考股數。實際數值以交易所公佈值為準。美股的每股稅後盈餘＝近四季本期稅後淨利加總／最新一季的總流通在外股數。當每股稅後盈餘為0或負值時，則不計算本益比。"
+  },
+  {
+    "name": "投資建議評級",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E8%A9%95%E7%B4%9A&group=TBASIC",
+    "head_description": "市場機構對個股的投資建議評等分數。美股股票才適用本欄位。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投資建議評級\");\nValue1 = GetField(\"RecommendationRating\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "市場機構對個股的投資建議評等分數。美股股票才適用本欄位。每個市場機構會不定期的對股票提供評等，評等分數分成５級，分別是：1=強烈買進，2=買進(Outperform)，3＝中立, 4=賣出(Underperform), 5=強烈賣出。基於所有機構所提供的評等分數，採平均計算後，就會得到投資建議評等分數。這個分數介於1 ~ 5之間，依照上述的評等方式，可以對應出以下的關係：\n1 <= x < 1.5：強烈買進\n1.5 <= x < 2.5：買進(Outperform)\n2.5 <= x < 3.5：中立\n3.5 <= x < 4.5：賣出(Underperform)\n4.5 <= x < 5：強烈賣出請注意：此欄位會不定期的更新並不是所有的股票都會有這個欄位"
+  },
+  {
+    "name": "股本(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E6%9C%AC%28%E5%85%83%29&group=TBASIC",
+    "head_description": "股票的股本，換算成元。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"股本(元)\");\nValue1 = GetField(\"CurrentCapital\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股票的股本，換算成元。"
+  },
+  {
+    "name": "股本(億)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E6%9C%AC%28%E5%84%84%29&group=TBASIC",
+    "head_description": "股票的股本，換算成億元。",
+    "rank": "億",
+    "code": "Value1 = GetField(\"股本(億)\");\nValue1 = GetField(\"CurrentCapitalinBillion\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "億元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股票的股本，換算成億元。"
+  },
+  {
+    "name": "財報股本(億)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%A1%E5%A0%B1%E8%82%A1%E6%9C%AC%28%E5%84%84%29&group=TBASIC",
+    "head_description": "公司財報(季、年)上載明的股本，換算成億元。",
+    "rank": "億",
+    "code": "Value1 = GetField(\"財報股本(億)\");\nValue1 = GetField(\"CurrentCapitalin100Million\");\nValue1 = GetField(\"億元股本\");\nValue1 = GetField(\"加權平均股本\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "億元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "公司財報(季、年)上載明的股本，換算成億元。"
+  },
+  {
+    "name": "殖利率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%AE%96%E5%88%A9%E7%8E%87&group=TBASIC",
+    "head_description": "股票的殖利率。單位是%，例如殖利率為5.6％的話，則回傳5.6。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"殖利率\");\nValue1 = GetField(\"Yield\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(股票)",
+      "美(股票)",
+      "美(特別股)",
+      "美(ETF)"
+    ],
+    "description": "股票的殖利率。單位是%，例如殖利率為5.6％的話，則回傳5.6。殖利率計算的公式如下：台股：(最近一個完整股利年度的現金股利＋股票股利)／收盤價＊100%美股/ETF：近1年股利／收盤價＊100%。美國特別股：(票面利率＊每股面額)／收盤價＊100%。"
+  },
+  {
+    "name": "發行張數(張)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%99%BC%E8%A1%8C%E5%BC%B5%E6%95%B8%28%E5%BC%B5%29&group=TBASIC",
+    "head_description": "當期的發行張數。",
+    "rank": "張",
+    "code": "Value1 = GetField(\"發行張數(張)\");\nValue1 = GetField(\"OutStandingShares\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當期的發行張數。資料來源為交易所。"
+  },
+  {
+    "name": "總市值(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B8%BD%E5%B8%82%E5%80%BC%28%E5%85%83%29&group=TBASIC",
+    "head_description": "股票或是指數的市值。股票市值以發行股數 ＊ 收盤價來計算，指數則是成分股的市值加總。單位為元。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"總市值(元)\");\nValue1 = GetField(\"TotalMarketValue\");\nValue1 = GetField(\"總市值\");\n",
+    "field_category": [
+      "基本"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數"
+    ],
+    "description": "股票或是指數的市值。股票市值以發行股數 ＊ 收盤價來計算，指數則是成分股的市值加總。單位為元。週以上頻率，是取期底值。"
+  }
+]

@@ -1,0 +1,1170 @@
+[
+  {
+    "name": "Delta",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=Delta&group=TOPTION",
+    "head_description": "選擇權／權證商品的Delta值，用來衡量標的商品價格的變動幅度對商品價格的影響。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"Delta\");\nValue1 = GetField(\"Delta\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的Delta值，用來衡量標的商品價格的變動幅度對商品價格的影響。公式是，當標的商品價格變動Y元，選擇權(或權證)價格將變動Delta＊Y(＊執行比例)元。例如，台指選擇權履約價16500的買權，其Delta值為0.5，表示當加權指數上漲100點時，此買權的價格會上漲50元。Delta計算式，請參考Black & Scholes模型。"
+  },
+  {
+    "name": "Gamma",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=Gamma&group=TOPTION",
+    "head_description": "選擇權／權證商品的Gamma值，用來衡量標的商品價格變動幅度對商品Delta的影響。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"Gamma\");\nValue1 = GetField(\"Gamma\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的Gamma值，用來衡量標的商品價格變動幅度對商品Delta的影響。公式是，當標的商品價格變動Y元，選擇權(或權證)的Delta值將變動Gamma＊Y。例如，台指選擇權履約價16500的買權，其Delta值為0.5，Gamma值為0.0008，表示當加權指數上漲100點時，此買權的Delta會增加0.08。Gamma計算式，請參考Black & Scholes模型。"
+  },
+  {
+    "name": "RHO",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=RHO&group=TOPTION",
+    "head_description": "選擇權／權證商品的RHO值，用來衡量利率的變動幅度對商品價格的影響。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"RHO\");\nValue1 = GetField(\"RHO\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的RHO值，用來衡量利率的變動幅度對商品價格的影響。公式是，當利率變動Y%，選擇權(或權證)價格將變動RHO＊Y(＊執行比例)元。假設，台指選擇權履約價16500的買權，其RHO值為4.2，表示當利率上漲1%，此買權的價格會上漲4.2元。RHO計算式，請參考Black & Scholes模型。"
+  },
+  {
+    "name": "Theta",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=Theta&group=TOPTION",
+    "head_description": "選擇權／權證商品的Theta值，用來衡量時間的流逝對商品價格的影響。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"Theta\");\nValue1 = GetField(\"Theta\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的Theta值，用來衡量時間的流逝對商品價格的影響。公式是，每經過一天，選擇權(或權證)價格將減少(Theta / 365)元。例如，台指選擇權履約價16500的買權，Theta值為-5，表示此買權每天會減損0.0137(=-5/365)元。Theta計算式，請參考Black & Scholes模型。"
+  },
+  {
+    "name": "Vega",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=Vega&group=TOPTION",
+    "head_description": "選擇權／權證商品的Vega值，用來衡量標的商品隱含波動率的變動幅度對商品價格的影響。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"Vega\");\nValue1 = GetField(\"Vega\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的Vega值，用來衡量標的商品隱含波動率的變動幅度對商品價格的影響。公式是，當標的商品價格變動Y%，選擇權(或權證)價格將變動Vega＊Y(＊執行比例)元。例如，台指選擇權履約價16500的買權，其Vega值為16，表示當加權指數的隱含波動率上漲1%時，此買權的價格會上漲16元。Vega計算式，請參考Black & Scholes模型。"
+  },
+  {
+    "name": "十大交易人未沖銷買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8D%81%E5%A4%A7%E4%BA%A4%E6%98%93%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "前十大交易人買方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"十大交易人未沖銷買口\");\nValue1 = GetField(\"LT10BuyOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前十大交易人買方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"十大交易人未沖銷買口\", param:=\"Call\")\nGetSymbolField(\"TXO00.TF\", \"十大交易人未沖銷買口\", param:=\"Put\")"
+  },
+  {
+    "name": "十大交易人未沖銷賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8D%81%E5%A4%A7%E4%BA%A4%E6%98%93%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "前十大交易人賣方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"十大交易人未沖銷賣口\");\nValue1 = GetField(\"LT10SellOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前十大交易人賣方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"十大交易人未沖銷賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"十大交易人未沖銷賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "十大法人未沖銷買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8D%81%E5%A4%A7%E6%B3%95%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "前十大法人買方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"十大法人未沖銷買口\");\nValue1 = GetField(\"LT10SIIBuyOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前十大法人買方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"十大法人未沖銷買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"十大法人未沖銷買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "十大法人未沖銷賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8D%81%E5%A4%A7%E6%B3%95%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "前十大法人賣方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"十大法人未沖銷賣口\");\nValue1 = GetField(\"LT10SIISellOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前十大法人賣方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"十大法人未沖銷賣口\", param:=\"Call\")\nGetSymbolField(\"TXO00.TF\", \"十大法人未沖銷賣口\", param:=\"Put\")"
+  },
+  {
+    "name": "三大法人交易買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E4%BA%A4%E6%98%93%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "三大法人多方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"三大法人交易買口\");\nValue1 = GetField(\"MITLongLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "三大法人多方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"三大法人交易買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"三大法人交易買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "三大法人交易賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E4%BA%A4%E6%98%93%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "三大法人空方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"三大法人交易賣口\");\nValue1 = GetField(\"MITSShortLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "三大法人空方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"三大法人交易賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"三大法人交易賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "三大法人買方未平倉",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89&group=TOPTION",
+    "head_description": "三大法人多方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"三大法人買方未平倉\");\nValue1 = GetField(\"MITLongOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "三大法人多方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"三大法人買方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"三大法人買方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "三大法人買方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "三大法人多方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"三大法人買方未平倉金額\");\nValue1 = GetField(\"MITLongOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "三大法人多方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"三大法人買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"三大法人買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "三大法人賣方未平倉",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89&group=TOPTION",
+    "head_description": "三大法人空方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"三大法人賣方未平倉\");\nValue1 = GetField(\"MITShortOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "三大法人空方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"三大法人賣方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"三大法人賣方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "三大法人賣方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "三大法人空方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"三大法人賣方未平倉金額\");\nValue1 = GetField(\"MITShortOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "三大法人空方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"三大法人買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"三大法人買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "五大交易人未沖銷買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BA%94%E5%A4%A7%E4%BA%A4%E6%98%93%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "前五大交易人買方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"五大交易人未沖銷買口\");\nValue1 = GetField(\"LT5BuyOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前五大交易人買方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"五大交易人未沖銷買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"五大交易人未沖銷買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "五大交易人未沖銷賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BA%94%E5%A4%A7%E4%BA%A4%E6%98%93%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "前五大交易人賣方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"五大交易人未沖銷賣口\");\nValue1 = GetField(\"LT5SellOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前五大交易人賣方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"五大交易人未沖銷賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"五大交易人未沖銷賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "五大法人未沖銷買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BA%94%E5%A4%A7%E6%B3%95%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "前五大法人買方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"五大法人未沖銷買口\");\nValue1 = GetField(\"LT5SIIBuyOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前五大法人買方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"五大法人未沖銷買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"五大法人未沖銷買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "五大法人未沖銷賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BA%94%E5%A4%A7%E6%B3%95%E4%BA%BA%E6%9C%AA%E6%B2%96%E9%8A%B7%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "前五大法人賣方未沖銷口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"五大法人未沖銷賣口\");\nValue1 = GetField(\"LT5SIISellOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "前五大法人賣方未沖銷口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"五大法人未沖銷賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"五大法人未沖銷賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "內含值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E5%90%AB%E5%80%BC&group=TOPTION",
+    "head_description": "選擇權的內含值(Intrinsic value)，也就是標的股現價與履約價的差異。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內含值\");\nValue1 = GetField(\"IntrinsicValue\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "點",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "選擇權的內含值(Intrinsic value)，也就是標的股現價與履約價的差異。如果是買權的話，計算公式為MAX(標的股現價－履約價，0)。\n如果是賣權的話，計算公式為MAX(履約價－標的股現價，0)。週頻率以上為統計期間的期底值。"
+  },
+  {
+    "name": "外資交易買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E8%B3%87%E4%BA%A4%E6%98%93%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "外資多方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外資交易買口\");\nValue1 = GetField(\"FINILongLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "外資多方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"外資交易買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"外資交易買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "外資交易賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E8%B3%87%E4%BA%A4%E6%98%93%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "外資空方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外資交易賣口\");\nValue1 = GetField(\"FINIShortLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "外資空方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"外資交易賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"外資交易賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "外資買方未平倉口數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E8%B3%87%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E5%8F%A3%E6%95%B8&group=TOPTION",
+    "head_description": "外資多方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外資買方未平倉口數\");\nValue1 = GetField(\"FINILongOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "外資多方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"外資買方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"外資買方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "外資買方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E8%B3%87%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "外資多方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外資買方未平倉金額\");\nValue1 = GetField(\"FINILongOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "外資多方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"外資買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"外資買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "外資賣方未平倉口數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E8%B3%87%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E5%8F%A3%E6%95%B8&group=TOPTION",
+    "head_description": "外資空方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外資賣方未平倉口數\");\nValue1 = GetField(\"FINIShortOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "外資空方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"外資賣方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"外資賣方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "外資賣方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E8%B3%87%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "外資空方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外資賣方未平倉金額\");\nValue1 = GetField(\"FINIShortOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "外資空方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"外資買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"外資買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "未平倉",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%AA%E5%B9%B3%E5%80%89&group=TOPTION",
+    "head_description": "未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"未平倉\");\nValue1 = GetField(\"OpenInterest\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "未平倉口數。"
+  },
+  {
+    "name": "自營商交易買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%87%9F%E5%95%86%E4%BA%A4%E6%98%93%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "自營商多方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"自營商交易買口\");\nValue1 = GetField(\"DBuyLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "自營商多方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"自營商交易買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"自營商交易買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "自營商交易賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%87%9F%E5%95%86%E4%BA%A4%E6%98%93%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "自營商空方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"自營商交易賣口\");\nValue1 = GetField(\"DSellLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "自營商空方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"自營商交易賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"自營商交易賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "自營商買方未平倉口數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%87%9F%E5%95%86%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E5%8F%A3%E6%95%B8&group=TOPTION",
+    "head_description": "自營商多方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"自營商買方未平倉口數\");\nValue1 = GetField(\"DLongOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "自營商多方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"自營商買方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"自營商買方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "自營商買方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%87%9F%E5%95%86%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "自營商多方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"自營商買方未平倉金額\");\nValue1 = GetField(\"DLongOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "自營商多方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"自營商買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"自營商買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "自營商賣方未平倉口數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%87%9F%E5%95%86%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E5%8F%A3%E6%95%B8&group=TOPTION",
+    "head_description": "自營商空方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"自營商賣方未平倉口數\");\nValue1 = GetField(\"DShortOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "自營商空方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"自營商賣方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"自營商賣方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "自營商賣方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%87%AA%E7%87%9F%E5%95%86%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "自營商空方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"自營商賣方未平倉金額\");\nValue1 = GetField(\"DShortOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "自營商空方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"自營商買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"自營商買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "估計除息點數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BC%B0%E8%A8%88%E9%99%A4%E6%81%AF%E9%BB%9E%E6%95%B8&group=TOPTION",
+    "head_description": "受成分股內除息所影響的估計點數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"估計除息點數\");\nValue1 = GetField(\"EstimatedExDividendPoint\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "點",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨"
+    ],
+    "description": "受成分股內除息所影響的估計點數。計算方式是加總從今日到到期日之間，所有成分股的除息所影響的點數。影響點數的計算方式是現金股利／當日收盤價＊商品佔指數的比重。"
+  },
+  {
+    "name": "投信交易買口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E4%BF%A1%E4%BA%A4%E6%98%93%E8%B2%B7%E5%8F%A3&group=TOPTION",
+    "head_description": "投信多方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投信交易買口\");\nValue1 = GetField(\"SBuyLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "投信多方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"投信交易買口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"投信交易買口\", param:=\"PUT\")"
+  },
+  {
+    "name": "投信交易賣口",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E4%BF%A1%E4%BA%A4%E6%98%93%E8%B3%A3%E5%8F%A3&group=TOPTION",
+    "head_description": "投信空方的交易口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投信交易賣口\");\nValue1 = GetField(\"SSellLots\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "投信空方的交易口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"投信交易賣口\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"投信交易賣口\", param:=\"PUT\")"
+  },
+  {
+    "name": "投信買方未平倉口數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E4%BF%A1%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E5%8F%A3%E6%95%B8&group=TOPTION",
+    "head_description": "投信多方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投信買方未平倉口數\");\nValue1 = GetField(\"SLongOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "投信多方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"投信買方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"投信買方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "投信買方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E4%BF%A1%E8%B2%B7%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "投信多方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投信買方未平倉金額\");\nValue1 = GetField(\"SLongOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "投信多方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"投信買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"投信買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "投信賣方未平倉口數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E4%BF%A1%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E5%8F%A3%E6%95%B8&group=TOPTION",
+    "head_description": "投信空方的未平倉口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投信賣方未平倉口數\");\nValue1 = GetField(\"SShortOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "投信空方的未平倉口數。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"投信賣方未平倉口數\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"投信賣方未平倉口數\", param:=\"PUT\")"
+  },
+  {
+    "name": "投信賣方未平倉金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E4%BF%A1%E8%B3%A3%E6%96%B9%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%91%E9%A1%8D&group=TOPTION",
+    "head_description": "投信空方的未平倉金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"投信賣方未平倉金額\");\nValue1 = GetField(\"SShortOIAmount\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "千元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "投信空方的未平倉金額。如果是期貨商品的話，數值是所有月份契約(含週契約)的加總。如果是選擇權商品的話，系統會根據目前商品的買賣權別，回傳買權或是賣權所有履約價/月份契約(含週契約)的加總。如果商品是選擇權現貨商品的話，則可以傳入參數，分別取得買權或是賣權的數值：GetSymbolField(\"TXO00.TF\", \"投信買方未平倉金額\", param:=\"CALL\")\nGetSymbolField(\"TXO00.TF\", \"投信買方未平倉金額\", param:=\"PUT\")"
+  },
+  {
+    "name": "波動性指數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B3%A2%E5%8B%95%E6%80%A7%E6%8C%87%E6%95%B8&group=TOPTION",
+    "head_description": "期交所所公布的「臺指選擇權波動率指數」。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"波動性指數\");\nValue1 = GetField(\"VolaIndex\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "期交所所公布的「臺指選擇權波動率指數」。此指標是期交所以CBOE VIX指數編製公式計算出的當月臺指選擇權的波動率指數。亦可使用GetSymbolField(\"VIX.TF\", \"Close\")來取得最新的數值。"
+  },
+  {
+    "name": "波動率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B3%A2%E5%8B%95%E7%8E%87&group=TOPTION",
+    "head_description": "選擇權／權證商品標的股的歷史波動率。單位是％，例如數值如果是23.12％，則回傳23.12。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"波動率\");\nValue1 = GetField(\"Volatility\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "台(權證)",
+      "香港股票"
+    ],
+    "description": "選擇權／權證商品標的股的歷史波動率。\n單位是％，例如數值如果是23.12％，則回傳23.12。計算方式是使用最近20天的股價變化，算出年化的歷史波動率，以此來衡量標的股股價的波動幅度。除了選擇權／權證商品之外，有發行衍生性商品的台股或是指數商品也都支援此欄位。週頻率以上為統計期間的期底值。"
+  },
+  {
+    "name": "時間價值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%99%82%E9%96%93%E5%83%B9%E5%80%BC&group=TOPTION",
+    "head_description": "選擇權／權證商品的時間價值(Time value)。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"時間價值\");\nValue1 = GetField(\"TimeValue\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "點",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "選擇權"
+    ],
+    "description": "選擇權或是權證商品的時間價值(Time value)。如果是選擇權的話，計算公式為 MAX(選擇權價格 ─ 內含值，0)。如果是權證商品的話，則先計算權證商品的內含值：如果是認購權證的話(CALL)，內含值為MAX(標的股現價－履約價，0)＊執行比例，如果是認售權證的話(PUT)，內含值為MAX(履約價－標的股現價，0)＊執行比例。有了內含值後，權證商品的時間價值也是同樣的公式：MAX(權證價格 ─ 內含值，0)。週頻率以上為統計期間的期底值。"
+  },
+  {
+    "name": "理論價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%90%86%E8%AB%96%E5%83%B9&group=TOPTION",
+    "head_description": "選擇權／權證商品的理論價格，採用Black-Scholes模型計算。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"理論價\");\nValue1 = GetField(\"TheoreticalPrice\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "點",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的理論價格，採用Black-Scholes模型計算。可以比對現價與理論價的差異，判斷目前價格的乖離程度。週頻率以上為統計期間的期底值。"
+  },
+  {
+    "name": "買賣權未平倉量比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E8%B3%A3%E6%AC%8A%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%8F%E6%AF%94%E7%8E%87&group=TOPTION",
+    "head_description": "同契約所有賣權商品(PUT)的未平倉量／買權商品(CALL)的未平倉量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買賣權未平倉量比率\");\nValue1 = GetField(\"CPOIRatio\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "比值",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "同契約所有賣權商品(PUT)的未平倉量／買權商品(CALL)的未平倉量。統計範圍包含所有履約價/月份(含週契約)。"
+  },
+  {
+    "name": "買賣權成交量比率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E8%B3%A3%E6%AC%8A%E6%88%90%E4%BA%A4%E9%87%8F%E6%AF%94%E7%8E%87&group=TOPTION",
+    "head_description": "同契約所有賣權商品(PUT)的成交量／所有買權商品(CALL)的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買賣權成交量比率\");\nValue1 = GetField(\"CPTradeRatio\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "比值",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "同契約所有賣權商品(PUT)的成交量／所有買權商品(CALL)的成交量。統計範圍包含所有履約價/月份(含週契約)，也包含夜盤商品。"
+  },
+  {
+    "name": "買權未平倉量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E6%AC%8A%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%8F&group=TOPTION",
+    "head_description": "同契約所有買權商品(CALL)的未平倉量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買權未平倉量\");\nValue1 = GetField(\"CallTotalOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "同契約所有買權商品(CALL)的未平倉量。統計範圍包含所有履約價/月份(含週契約)。"
+  },
+  {
+    "name": "買權成交量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E6%AC%8A%E6%88%90%E4%BA%A4%E9%87%8F&group=TOPTION",
+    "head_description": "開盤到現在的買權成交量總和。夜盤商品不納入計算。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買權成交量\");\nValue1 = GetField(\"CallTotalVolume\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "開盤到現在的買權成交量總和。夜盤商品不納入計算。"
+  },
+  {
+    "name": "賣權未平倉量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E6%AC%8A%E6%9C%AA%E5%B9%B3%E5%80%89%E9%87%8F&group=TOPTION",
+    "head_description": "同契約所有賣權商品(PUT)的未平倉量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣權未平倉量\");\nValue1 = GetField(\"PutTotalOI\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "同契約所有賣權商品(PUT)的未平倉量。統計範圍包含所有履約價/月份(含週契約)。"
+  },
+  {
+    "name": "賣權成交量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E6%AC%8A%E6%88%90%E4%BA%A4%E9%87%8F&group=TOPTION",
+    "head_description": "開盤到現在的賣權成交量總和。夜盤商品不納入計算。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣權成交量\");\nValue1 = GetField(\"PutTotalVolume\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "選擇權"
+    ],
+    "description": "開盤到現在的賣權成交量總和。夜盤商品不納入計算。"
+  },
+  {
+    "name": "隱含波動率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%9A%B1%E5%90%AB%E6%B3%A2%E5%8B%95%E7%8E%87&group=TOPTION",
+    "head_description": "選擇權／權證商品的隱含波動率(IV)。單位是％，例如例如數值如果是23.12％，則回傳23.12。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"隱含波動率\");\nValue1 = GetField(\"ImpliedVolatility\");\n",
+    "field_category": [
+      "期權"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(權證)",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品的隱含波動率(IV)。\n單位是％，例如例如數值如果是23.12％，則回傳23.12。隱含波動率是以商品在市場上的最新成交價格以Black-Scholes 模型反推出的標的商品波動率。隱含波動率越高就代表標的波動度越高(價格行情震盪越劇烈)。週頻率以上為統計期間的期底值。"
+  }
+]

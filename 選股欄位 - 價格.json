@@ -1,0 +1,568 @@
+[
+  {
+    "name": "Jensen",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=Jensen&group=FPRICE",
+    "head_description": "Jensen指標用於衡量實際的投資回報超過基於其風險水平所預期的市場回報。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"Jensen\");\nValue1 = GetField(\"Jensen\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "Jensen指標用於衡量實際的投資回報超過基於其風險水平所預期的市場回報。計算公式為：(商品一個月的平均報酬率 - 無風險利率 - Beta值 * (大盤同期報酬率 - 無風險利率))，用來評估個股扣除市場風險後的報酬率。Jensen指標大於0時表示超過預期，負值則表示低於預期。"
+  },
+  {
+    "name": "SHARPE",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=SHARPE&group=FPRICE",
+    "head_description": "Sharpe指標衡量投資相對於其風險所帶來的超額回報率，即投資回報超過無風險利率部分的表現。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"SHARPE\");\nValue1 = GetField(\"SHARPE\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "Sharpe指標衡量投資相對於其風險所帶來的超額回報率，即投資回報超過無風險利率部分的表現。計算方式為: (商品過去一個月的平均報酬率 - 無風險利率) / 過去一個月的報酬率的標準差，用來衡量每單位風險所獲得的超額報酬。"
+  },
+  {
+    "name": "Treynor",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=Treynor&group=FPRICE",
+    "head_description": "Treynor指標衡量投資相對於系統性風險的回報率。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"Treynor\");\nValue1 = GetField(\"Treynor\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "Treynor指標衡量投資相對於系統性風險的回報率。計算公式為: (商品過去一個月的平均報酬率 - 無風險利率) / 商品的Beta值，用來衡量每單位系統風險所獲得的超額報酬。"
+  },
+  {
+    "name": "下游股價指標",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8B%E6%B8%B8%E8%82%A1%E5%83%B9%E6%8C%87%E6%A8%99&group=FPRICE",
+    "head_description": "利用客戶的股價波動計算股價指數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"下游股價指標\");\nValue1 = GetField(\"DownStreamPriceIndex\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "利用客戶的股價波動計算股價指數。從2004年1月1日為基期100後逐日計算。下游股價指標的計算有包含國外股票，詳細的成份內容可以參考個股的\"營運結構\"。"
+  },
+  {
+    "name": "上游股價指標",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8A%E6%B8%B8%E8%82%A1%E5%83%B9%E6%8C%87%E6%A8%99&group=FPRICE",
+    "head_description": "利用供應商的股價波動計算股價指數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"上游股價指標\");\nValue1 = GetField(\"UpStreamPriceIndex\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "利用供應商的股價波動計算股價指數。從2004年1月1日為基期100後逐日計算。上游股價指標的計算有包含國外股票，詳細的成份內容可以參考個股的\"營運結構\"。"
+  },
+  {
+    "name": "月平均收益率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%88%E5%B9%B3%E5%9D%87%E6%94%B6%E7%9B%8A%E7%8E%87&group=FPRICE",
+    "head_description": "最近21日的平均賺賠比例。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"月平均收益率\");\nValue1 = GetField(\"AvgReturnM\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "最近21日的平均賺賠比例。計算公式 = 近21日漲幅 / 21，其中近21日漲幅 = (收盤價 - 21日前收盤價) / 21日前收盤價 * 100%。使用還原資料計算。"
+  },
+  {
+    "name": "本益比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%AC%E7%9B%8A%E6%AF%94&group=FPRICE",
+    "head_description": "股票的本益比。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"本益比\");\nValue1 = GetField(\"PERatio\");\nValue1 = GetField(\"PE\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "倍",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "股票的本益比。計算公式為收盤價／每股稅後盈餘。台股的每股稅後盈餘＝近四季稅後盈餘／發行參考股數。實際數值以交易所公佈值為準。美股的每股稅後盈餘＝近四季本期稅後淨利加總／最新一季的總流通在外股數。當每股稅後盈餘為0或負值時，則不計算本益比。"
+  },
+  {
+    "name": "同業股價指標",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%90%8C%E6%A5%AD%E8%82%A1%E5%83%B9%E6%8C%87%E6%A8%99&group=FPRICE",
+    "head_description": "利用同業競爭公司的股價波動計算股價指數。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"同業股價指標\");\nValue1 = GetField(\"CompetitorsPriceIndex\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "利用同業競爭公司的股價波動計算股價指數。從2004年1月1日為基期100後逐日計算。同業競爭公司詳細的成份內容可以參考個股的\"營運結構\"。"
+  },
+  {
+    "name": "收盤價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%94%B6%E7%9B%A4%E5%83%B9&group=FPRICE",
+    "head_description": "K棒資料的收盤價(最後一個成交價位)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"收盤價\");\nValue1 = GetField(\"Close\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "K棒資料的收盤價(最後一個成交價位)。語法上也可以使用Close來取得同樣的數值。"
+  },
+  {
+    "name": "均價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9D%87%E5%83%B9&group=FPRICE",
+    "head_description": "每日的平均成交價。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"均價\");\nValue1 = GetField(\"AvgPrice\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "每日的平均成交價。計算方式是累加每日開盤後每筆成交的價格乘上數量，然後除以累計的成交數量，得出當日平均的成交價。如果是分鐘頻率的話，數值為開盤到現在為止的成交均價。如果是日頻率的話則是當日的成交均價。"
+  },
+  {
+    "name": "投資建議目標價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E7%9B%AE%E6%A8%99%E5%83%B9&group=FPRICE",
+    "head_description": "市場機構對個股的股價預估平均值。美股股票才適用本欄位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"投資建議目標價\");\nValue1 = GetField(\"AnalystPriceTargets\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "美元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "美(股票)"
+    ],
+    "description": "市場機構對個股的股價預估平均值。\n美股股票才適用本欄位。每個市場機構會不定期的對股票提供評等，同時也會提供預估目標價。\n基於所有機構所提供的預估目標價，採平均計算後，就會得到投資目標價欄位。請注意：此欄位會不定期的更新並不是所有的股票都會有這個欄位"
+  },
+  {
+    "name": "貝他值",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%9D%E4%BB%96%E5%80%BC&group=FPRICE",
+    "head_description": "個股的股價變動與市場大盤指數變動的相關性。也就是當大盤平均上漲／下跌1%時，個股的漲跌預計將以 β% 的比例相應上漲或下跌。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"貝他值\");\nValue1 = GetField(\"Beta\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(ETF)"
+    ],
+    "description": "個股的股價變動與市場大盤指數變動的相關性。\n也就是當大盤平均上漲／下跌1%時，個股的漲跌預計將以 β% 的比例相應上漲或下跌。貝他值>1時，顯示個股的股價波動程度將高過市場。貝他值<1時，表示個股的股價波動程度會較市場平均值穩定。"
+  },
+  {
+    "name": "波動率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B3%A2%E5%8B%95%E7%8E%87&group=FPRICE",
+    "head_description": "選擇權／權證商品標的股的歷史波動率。單位是％，例如數值如果是23.12％，則回傳23.12。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"波動率\");\nValue1 = GetField(\"Volatility\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "選擇權"
+    ],
+    "description": "選擇權／權證商品標的股的歷史波動率。\n單位是％，例如數值如果是23.12％，則回傳23.12。計算方式是使用最近20天的股價變化，算出年化的歷史波動率，以此來衡量標的股股價的波動幅度。除了選擇權／權證商品之外，有發行衍生性商品的台股或是指數商品也都支援此欄位。週頻率以上為統計期間的期底值。"
+  },
+  {
+    "name": "股價淨值比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E5%83%B9%E6%B7%A8%E5%80%BC%E6%AF%94&group=FPRICE",
+    "head_description": "計算公式：收盤價／每股淨值。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"股價淨值比\");\nValue1 = GetField(\"PBRatio\");\nValue1 = GetField(\"PB\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "倍",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "美(股票)"
+    ],
+    "description": "計算公式：收盤價／每股淨值。週頻率以上為統計期間的期底值。"
+  },
+  {
+    "name": "振幅",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%8C%AF%E5%B9%85&group=FPRICE",
+    "head_description": "當期股價的振幅。單位為%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"振幅\");\nValue1 = GetField(\"Range(％)\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當期股價的振幅。單位為%。振幅計算公式 = (當期最高價 - 當期最低價) * 100 / 參考價%。週頻率以上為區間統計值。"
+  },
+  {
+    "name": "真實範圍",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9C%9F%E5%AF%A6%E7%AF%84%E5%9C%8D&group=FPRICE",
+    "head_description": "股價的真實範圍(TrueRange)，數值是考慮到跳空所推算出來的股價真正震盪幅度。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"真實範圍\");\nValue1 = GetField(\"TrueRange\");\nValue1 = GetField(\"TR\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "股價的真實範圍(TrueRange)，數值是考慮到跳空所推算出來的股價真正震盪幅度。計算公式：MAX(最高價 ─ 最低價，最高價 ─ 昨收價，最低價 ─ 昨收價)。如果今日的股價跳空，而且最低點高於昨收的話，真實範圍會涵蓋跳空的缺口(最高價─昨收價)，同理如果今日股價開低，而且最高點小於昨收的話，真實範圍也會涵蓋跳空的缺口(最低價─昨收價)。"
+  },
+  {
+    "name": "真實範圍波幅",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9C%9F%E5%AF%A6%E7%AF%84%E5%9C%8D%E6%B3%A2%E5%B9%85&group=FPRICE",
+    "head_description": "真實範圍(TrueRange) / 昨收價 * 100%。單位為%，假如真實範圍是5，昨收價是50，則真實範圍波幅為10%，回傳值為10。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"真實範圍波幅\");\nValue1 = GetField(\"TR％\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "真實範圍(TrueRange) / 昨收價 * 100%。單位為%，假如真實範圍是5，昨收價是50，則真實範圍波幅為10%，回傳值為10。"
+  },
+  {
+    "name": "高低差",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%AB%98%E4%BD%8E%E5%B7%AE&group=FPRICE",
+    "head_description": "當期的最高價 － 當期的最低價。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"高低差\");\nValue1 = GetField(\"Range\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當期的最高價 － 當期的最低價。"
+  },
+  {
+    "name": "參考價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8F%83%E8%80%83%E5%83%B9&group=FPRICE",
+    "head_description": "當日交易的參考價。一般而言是前一交易日的收盤價，如果股票商品有除權息的話，則是除權息後的參考價。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"參考價\");\nValue1 = GetField(\"RefPrice\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日交易的參考價。一般而言是前一交易日的收盤價，如果股票商品有除權息的話，則是除權息後的參考價。除權息的計算公式如下(實際數值以交易所公佈為主)：\n1.除息參考價為股價－股息\n2.除權參考價為股價／(1+配股率)\n3.同時除權息參考價為 (股價-股息)／(1+配股率)"
+  },
+  {
+    "name": "最低價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E4%BD%8E%E5%83%B9&group=FPRICE",
+    "head_description": "K棒資料的最低成交價位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"最低價\");\nValue1 = GetField(\"Low\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "K棒資料的最低成交價位。語法上也可以使用Low來取得同樣的數值。"
+  },
+  {
+    "name": "最高價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E9%AB%98%E5%83%B9&group=FPRICE",
+    "head_description": "K棒資料的最高成交價位。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"最高價\");\nValue1 = GetField(\"High\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "K棒資料的最高成交價位。語法上也可以使用High來取得同樣的數值。"
+  },
+  {
+    "name": "跌停價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B7%8C%E5%81%9C%E5%83%B9&group=FPRICE",
+    "head_description": "當日的跌停價。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"跌停價\");\nValue1 = GetField(\"DownLimit\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日的跌停價。"
+  },
+  {
+    "name": "週平均收益率",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%80%B1%E5%B9%B3%E5%9D%87%E6%94%B6%E7%9B%8A%E7%8E%87&group=FPRICE",
+    "head_description": "最近5日的平均賺賠比例。計算公式 = 近5日漲幅 / 5，其中近5日漲幅 = (收盤價 - 5日前收盤價) / 5日前收盤價 * 100%。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"週平均收益率\");\nValue1 = GetField(\"AvgReturnW\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "最近5日的平均賺賠比例。計算公式 = 近5日漲幅 / 5，其中近5日漲幅 = (收盤價 - 5日前收盤價) / 5日前收盤價 * 100%。使用還原資料計算。"
+  },
+  {
+    "name": "開盤價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E5%83%B9&group=FPRICE",
+    "head_description": "K棒資料的開盤價(第一個成交價位)。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"開盤價\");\nValue1 = GetField(\"Open\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "K棒資料的開盤價(第一個成交價位)。語法上也可以使用Open來取得同樣的數值。"
+  },
+  {
+    "name": "漲停價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%BC%B2%E5%81%9C%E5%83%B9&group=FPRICE",
+    "head_description": "當日的漲停價。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"漲停價\");\nValue1 = GetField(\"UpLimit\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日的漲停價。"
+  },
+  {
+    "name": "漲跌幅",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%BC%B2%E8%B7%8C%E5%B9%85&group=FPRICE",
+    "head_description": "當期股價的漲跌幅。單位是％。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"漲跌幅\");\nValue1 = GetField(\"Change(％)\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "當期股價的漲跌幅。單位是％。漲跌幅計算方式為(當期收盤價 - 當期參考價)／當期參考價  * 100%。週頻率以上為區間統計值。"
+  },
+  {
+    "name": "標準差",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%A8%99%E6%BA%96%E5%B7%AE&group=FPRICE",
+    "head_description": "使用一年的每日漲跌幅，計算標準差數值，用來衡量股票報酬率的波動性。數值越小表示波動性越低。",
+    "rank": "選股欄位",
+    "code": "Value1 = GetField(\"標準差\");\nValue1 = GetField(\"StdDev\");\n",
+    "field_category": [
+      "價格"
+    ],
+    "unit": "％",
+    "format": "數值",
+    "supported_scripts": [
+      "選股",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "使用一年的每日漲跌幅，計算標準差數值，用來衡量股票報酬率的波動性。數值越小表示波動性越低。"
+  }
+]

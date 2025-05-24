@@ -1,0 +1,1395 @@
+[
+  {
+    "name": "GDP比例",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=GDP%E6%AF%94%E4%BE%8B&group=TVOLUME",
+    "head_description": "指數市值佔GDP的比例。單位是％，如果佔比是150％的話，則回傳150。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"GDP比例\");\nValue1 = GetField(\"ToGDPRatio\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數"
+    ],
+    "description": "指數市值佔GDP的比例。單位是％，如果佔比是150％的話，則回傳150。市值佔GDP比例可以用來觀察股市的熱度。計算公式：成分股總市值 / GDP ＊ 100%。週以上頻率，是取期底值。"
+  },
+  {
+    "name": "下跌量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8B%E8%B7%8C%E9%87%8F&group=TVOLUME",
+    "head_description": "這一筆K棒的所有成交內比前一價下跌的成交量的加總。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"下跌量\");\nValue1 = GetField(\"DownVolume\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "這一筆K棒的所有成交內比前一價下跌的成交量的加總。例如，這一筆K棒內有4筆成交，分別是30元2張，30元3張，31元4張，30元5張，而前一筆K棒的收盤價是29。那麼上漲量=6張，下跌量=5張。計算方法如下：第一筆成交30元比前一價29元上漲(上漲量=2張)第二筆成交30元跟前一價30元相同，不予計算第三筆31元比前一價30元上漲(上漲量=2張+4張=6張)第四筆30元比前一價31元下跌(下跌量=5張)"
+  },
+  {
+    "name": "上漲量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8A%E6%BC%B2%E9%87%8F&group=TVOLUME",
+    "head_description": "這一筆K棒的所有成交內比前一價上漲的成交量的加總。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"上漲量\");\nValue1 = GetField(\"UpVolume\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "這一筆K棒的所有成交內比前一價上漲的成交量的加總。例如，這一筆K棒內有4筆成交，分別是30元2張，30元3張，31元4張，30元5張，而前一筆K棒的收盤價是29。那麼上漲量=6張，下跌量=5張。計算方法如下：第一筆成交30元比前一價29元上漲(上漲量=2張)第二筆成交30元跟前一價30元相同，不予計算第三筆31元比前一價30元上漲(上漲量=2張+4張=6張)第四筆30元比前一價31元下跌(下跌量=5張)"
+  },
+  {
+    "name": "內盤成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E7%9B%A4%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "這一筆K棒的所有成交內以內盤成交的次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內盤成交次數\");\nValue1 = GetField(\"TotalInTicks\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "這一筆K棒的所有成交內以內盤成交的次數。"
+  },
+  {
+    "name": "內盤均量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E7%9B%A4%E5%9D%87%E9%87%8F&group=TVOLUME",
+    "head_description": "計算公式：內盤成交量／內盤成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內盤均量\");\nValue1 = GetField(\"InAvgVolume\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式：內盤成交量／內盤成交次數。"
+  },
+  {
+    "name": "內盤量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E7%9B%A4%E9%87%8F&group=TVOLUME",
+    "head_description": "這一筆K棒的所有成交內標記為內盤成交的加總數量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內盤量\");\nValue1 = GetField(\"TradeVolumeAtBid\");\nValue1 = GetField(\"內盤金額\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "台股:張；大盤/指數:元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "這一筆K棒的所有成交內標記為內盤成交的加總數量。系統會依照成交發生當時委託簿的最佳委買價格以及最佳委賣價格來判斷此筆是外盤成交或是內盤成交。如果成交的價格貼近委買價格的話，則標示為內盤成交，一般會視為主動「賣出」。如果是指數類型商品的話，則是比前一價下跌的所有成交量的加總。"
+  },
+  {
+    "name": "外盤成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E7%9B%A4%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "這一筆K棒的所有成交內以外盤成交的次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外盤成交次數\");\nValue1 = GetField(\"TotalOutTicks\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "這一筆K棒的所有成交內以外盤成交的次數。"
+  },
+  {
+    "name": "外盤均量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E7%9B%A4%E5%9D%87%E9%87%8F&group=TVOLUME",
+    "head_description": "計算公式  : 外盤成交量／外盤成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外盤均量\");\nValue1 = GetField(\"OutAvgVolume\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "計算公式  : 外盤成交量／外盤成交次數。"
+  },
+  {
+    "name": "外盤量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E7%9B%A4%E9%87%8F&group=TVOLUME",
+    "head_description": "這一筆K棒的所有成交內被標記為外盤成交的加總數量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外盤量\");\nValue1 = GetField(\"TradeVolumeAtAsk\");\nValue1 = GetField(\"外盤金額\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "台股:張；大盤/指數:元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "這一筆K棒的所有成交內被標記為外盤成交的加總數量。系統會依照成交發生當時委託簿的最佳委買價格以及最佳委賣價格來判斷此筆是外盤成交或是內盤成交。如果成交的價格貼近委賣價格的話，則標示為外盤成交，一般會視為主動「買進」。如果是指數類型商品的話，則是比前一價上漲的所有成交量的加總。"
+  },
+  {
+    "name": "成交均量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%88%90%E4%BA%A4%E5%9D%87%E9%87%8F&group=TVOLUME",
+    "head_description": "整體市場(扣除權證)的每筆成交平均張數。計算公式：累計成交／累成交筆。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"成交均量\");\nValue1 = GetField(\"AvgDealedShare\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "整體市場(扣除權證)的每筆成交平均張數。計算公式：累計成交／累成交筆。"
+  },
+  {
+    "name": "成交金額(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%88%90%E4%BA%A4%E9%87%91%E9%A1%8D%28%E5%85%83%29&group=TVOLUME",
+    "head_description": "成交的加總金額。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"成交金額(元)\");\nValue1 = GetField(\"TradeValue\");\nValue1 = GetField(\"成交金額\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "成交的加總金額。如果是個股的話，計算方式是統計每筆成交數量乘上成交價。如果是大盤或是指數型商品的話，此欄位與成交量是相同的。數值依照統計區間而易，如果是分鐘頻率的話，則是該分鐘統計區間的每筆成交金額的加總，如果是週月以上的話則是每日成交金額的加總。"
+  },
+  {
+    "name": "成交量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%88%90%E4%BA%A4%E9%87%8F&group=TVOLUME",
+    "head_description": "K棒資料的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"成交量\");\nValue1 = GetField(\"Volume\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "台股:張；大盤/類股:元；期貨/選擇權:口；其他市場股票:股",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的成交量。數值單位依照商品類型而異，例如台股的話成交量的單位是張，可是美股的話成交量的單位則是股。語法上也可以使用Volume來取得同樣的數值。"
+  },
+  {
+    "name": "估計量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BC%B0%E8%A8%88%E9%87%8F&group=TVOLUME",
+    "head_description": "當日收盤的預估成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"估計量\");\nValue1 = GetField(\"EstimateVolume\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "個股:張，大盤:元，類股:元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "當日收盤的預估成交量。大盤或是個股的估計的方式是統計過去一段時間內每日盤中的分鐘累計成交量，算出每分鐘成交量的分佈比例，然後依照當日開盤迄今的累計成交量，來推算收盤時可能的成交量。類股商品（細產業指標、主題指標）的計算方式為成分股預估量乘以均價的加總。"
+  },
+  {
+    "name": "委買均",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A7%94%E8%B2%B7%E5%9D%87&group=TVOLUME",
+    "head_description": "每一筆委買的平均張數/口數。計算公式：累計委買／累委買筆。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"委買均\");\nValue1 = GetField(\"AvgLongShare\");\nValue1 = GetField(\"AvgLongUnits\");\nValue1 = GetField(\"均買張數\");\nValue1 = GetField(\"均買口數\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "大盤:張；期貨/選擇權:口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "每一筆委買的平均張數/口數。計算公式：累計委買／累委買筆。"
+  },
+  {
+    "name": "委賣均",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A7%94%E8%B3%A3%E5%9D%87&group=TVOLUME",
+    "head_description": "每一筆委賣的平均張數/口數。計算公式：累計委賣／累委賣筆。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"委賣均\");\nValue1 = GetField(\"AvgShortShare\");\nValue1 = GetField(\"AvgShortUnits\");\nValue1 = GetField(\"均賣張數\");\nValue1 = GetField(\"均賣口數\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "大盤:張；期貨/選擇權:口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "每一筆委賣的平均張數/口數。計算公式：累計委賣／累委賣筆。"
+  },
+  {
+    "name": "累成交筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E6%88%90%E4%BA%A4%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤迄今整體市場(扣除權證)的成交總筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累成交筆\");\nValue1 = GetField(\"TotalMatchTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "開盤迄今整體市場(扣除權證)的成交總筆數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。"
+  },
+  {
+    "name": "累委買筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E5%A7%94%E8%B2%B7%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤迄今的總委買筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累委買筆\");\nValue1 = GetField(\"TotalBidTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤迄今的總委買筆數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。證券市場的數值為扣除權證的統計。"
+  },
+  {
+    "name": "累委賣筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E5%A7%94%E8%B3%A3%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤迄今的總委賣筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累委賣筆\");\nValue1 = GetField(\"TotalAskTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤迄今的總委賣筆數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。證券市場的數值為扣除權證的統計。"
+  },
+  {
+    "name": "累計成交",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E8%A8%88%E6%88%90%E4%BA%A4&group=TVOLUME",
+    "head_description": "開盤迄今整體市場(扣除權證)的總成交張數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累計成交\");\nValue1 = GetField(\"MatchUnit\");\nValue1 = GetField(\"成交張數\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤"
+    ],
+    "description": "開盤迄今整體市場(扣除權證)的總成交張數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。請注意此數值與大盤成交量(金額)是不一樣的統計數據。"
+  },
+  {
+    "name": "累計委買",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E8%A8%88%E5%A7%94%E8%B2%B7&group=TVOLUME",
+    "head_description": "開盤迄今的總委買張數/口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累計委買\");\nValue1 = GetField(\"BidUnits\");\nValue1 = GetField(\"委買張數\");\nValue1 = GetField(\"委買口數\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "大盤:張；期貨/選擇權:口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤迄今的總委買張數/口數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。證券市場的數值為扣除權證的統計。"
+  },
+  {
+    "name": "累計委賣",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E8%A8%88%E5%A7%94%E8%B3%A3&group=TVOLUME",
+    "head_description": "開盤迄今的總委賣張數/口數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累計委賣\");\nValue1 = GetField(\"AskUnits\");\nValue1 = GetField(\"委賣張數\");\nValue1 = GetField(\"委賣口數\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "大盤:張；期貨/選擇權:口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤迄今的總委賣張數/口數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。證券市場的數值為扣除權證的統計。"
+  },
+  {
+    "name": "累買成筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E8%B2%B7%E6%88%90%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤迄今以買進成交的總筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累買成筆\");\nValue1 = GetField(\"TotalBidMatchTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤迄今以買進成交的總筆數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。可以使用此數值(與累賣成筆)來估算盤中的趨勢：如果累賣成筆>累買成筆的話，代表每一筆以賣出成交的單量會小於以買進成交的單量，一般會視為大戶(單量大)目前站在買方。"
+  },
+  {
+    "name": "累賣成筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B4%AF%E8%B3%A3%E6%88%90%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤迄今以賣出成交的總筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"累賣成筆\");\nValue1 = GetField(\"TotalAskMatchTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤迄今以賣出成交的總筆數。交易所盤中會定時公布此資訊。如果是分鐘頻率的話會取得當下最新數值，如果是日頻率的話則是當日最後的數值。可以使用此數值(與累買成筆)來估算盤中的趨勢：如果累賣成筆>累買成筆的話，代表每一筆以賣出成交的單量會小於以買進成交的單量，一般會視為大戶(單量大)目前站在買方。"
+  },
+  {
+    "name": "買進大單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E5%A4%A7%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "買進大單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進大單成交次數\");\nValue1 = GetField(\"BidTickCount_L\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進大單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進大單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E5%A4%A7%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "買進大單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進大單金額\");\nValue1 = GetField(\"BidVolumePrice_L\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進大單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進大單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E5%A4%A7%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "買進大單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進大單量\");\nValue1 = GetField(\"BidVolume_L\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進大單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進小單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E5%B0%8F%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "買進小單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進小單成交次數\");\nValue1 = GetField(\"BidTickCount_S\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進小單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進小單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E5%B0%8F%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "買進小單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進小單金額\");\nValue1 = GetField(\"BidVolumePrice_S\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進小單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進小單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E5%B0%8F%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "買進小單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進小單量\");\nValue1 = GetField(\"BidVolume_S\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進小單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進中單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E4%B8%AD%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "買進中單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進中單成交次數\");\nValue1 = GetField(\"BidTickCount_M\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進中單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進中單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E4%B8%AD%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "買進中單的金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進中單金額\");\nValue1 = GetField(\"BidVolumePrice_M\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進中單的金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進中單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E4%B8%AD%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "買進中單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進中單量\");\nValue1 = GetField(\"BidVolume_M\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進中單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進特大單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E7%89%B9%E5%A4%A7%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "買進特大單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進特大單成交次數\");\nValue1 = GetField(\"BidTickCount_XL\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進特大單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進特大單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E7%89%B9%E5%A4%A7%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "買進特大單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進特大單金額\");\nValue1 = GetField(\"BidVolumePrice_XL\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進特大單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "買進特大單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E9%80%B2%E7%89%B9%E5%A4%A7%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "買進特大單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買進特大單量\");\nValue1 = GetField(\"BidVolume_XL\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "買進特大單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "量比",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%87%8F%E6%AF%94&group=TVOLUME",
+    "head_description": "當日估計量與昨量的放大比例。計算公式：估計量／昨量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"量比\");\nValue1 = GetField(\"VolumeRatio\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "比值",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "當日估計量與昨量的放大比例。計算公式：估計量／昨量。這個數值越大表示當日的成交量可能會放大，可以當成是交易熱絡度的一個指標。"
+  },
+  {
+    "name": "開盤委買",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E5%A7%94%E8%B2%B7&group=TVOLUME",
+    "head_description": "開盤時委託買進的數量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"開盤委買\");\nValue1 = GetField(\"DayOpenBid\");\nValue1 = GetField(\"期權開盤委買\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "大盤/類股/台股:張；期貨/選擇權:口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤時委託買進的數量。台股的數值是開盤第一筆成交前五檔委買的數量加總。類股商品（細產業指標、主題指標）的計算方式則是成分股的開盤委買的加總。大盤/期貨/選擇權的數值則是交易所公布的委買委賣資料的第一筆數值。大盤的數值會扣除權證。"
+  },
+  {
+    "name": "開盤委賣",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E5%A7%94%E8%B3%A3&group=TVOLUME",
+    "head_description": "開盤時委託賣出的數量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"開盤委賣\");\nValue1 = GetField(\"DayOpenAsk\");\nValue1 = GetField(\"期權開盤委賣\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "大盤/類股/台股:張；期貨/選擇權:口",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤時委託賣出的數量。台股的數值是開盤第一筆成交前五檔委賣的數量加總。類股商品（細產業指標、主題指標）的計算方式則是成分股的開盤委賣的加總。大盤/期貨/選擇權的數值則是交易所公布的委買委賣資料的第一筆數值。大盤的數值會扣除權證。"
+  },
+  {
+    "name": "開盤買筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E8%B2%B7%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤時委託買進的筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"開盤買筆\");\nValue1 = GetField(\"OpenBidTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤時委託買進的筆數。大盤的數值會扣除權證。"
+  },
+  {
+    "name": "開盤賣筆",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E8%B3%A3%E7%AD%86&group=TVOLUME",
+    "head_description": "開盤時委託賣出的筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"開盤賣筆\");\nValue1 = GetField(\"OpenAskTx\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "期貨",
+      "選擇權"
+    ],
+    "description": "開盤時委託賣出的筆數。大盤的數值會扣除權證。"
+  },
+  {
+    "name": "新聞正向分數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%96%B0%E8%81%9E%E6%AD%A3%E5%90%91%E5%88%86%E6%95%B8&group=TVOLUME",
+    "head_description": "依據個股新聞內容，判斷該則新聞為正向，負向，或是中立(觀望)。新聞正向分數則是正向的新聞則數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"新聞正向分數\");\nValue1 = GetField(\"NewsPosScore\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(股票)"
+    ],
+    "description": "依據個股新聞內容，判斷該則新聞為正向，負向，或是中立(觀望)。新聞正向分數則是正向的新聞則數。請注意：並非每檔商品都會有數值，每日會定時更新數值，非交易日的資料會彙整到前一個交易日，資料從2019/1/1日開始提供。"
+  },
+  {
+    "name": "新聞負向分數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%96%B0%E8%81%9E%E8%B2%A0%E5%90%91%E5%88%86%E6%95%B8&group=TVOLUME",
+    "head_description": "依據個股新聞內容，判斷該則新聞為正向，負向，或是中立(觀望)。新聞負向分數則是負向的新聞則數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"新聞負向分數\");\nValue1 = GetField(\"NewsNegScore\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(股票)"
+    ],
+    "description": "依據個股新聞內容，判斷該則新聞為正向，負向，或是中立(觀望)。新聞負向分數則是負向的新聞則數。請注意：並非每檔商品都會有數值，每日會定時更新數值，非交易日的資料會彙整到前一個交易日，資料從2019/1/1日開始提供。"
+  },
+  {
+    "name": "新聞聲量分數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%96%B0%E8%81%9E%E8%81%B2%E9%87%8F%E5%88%86%E6%95%B8&group=TVOLUME",
+    "head_description": "依據個股新聞內容，判斷該則新聞為正向，負向，或是中立(觀望)。新聞聲量分數則是正向的新聞則數 + 負向的新聞則數 + 觀望的新聞則數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"新聞聲量分數\");\nValue1 = GetField(\"NewsVolScore\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台(股票)"
+    ],
+    "description": "依據個股新聞內容，判斷該則新聞為正向，負向，或是中立(觀望)。新聞聲量分數則是正向的新聞則數 + 負向的新聞則數 + 觀望的新聞則數。請注意：並非每檔商品都會有數值，每日會定時更新數值，非交易日的資料會彙整到前一個交易日，資料從2019/1/1日開始提供。"
+  },
+  {
+    "name": "當日序號",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%95%B6%E6%97%A5%E5%BA%8F%E8%99%9F&group=TVOLUME",
+    "head_description": "當日的第幾筆成交。數值從1開始。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"當日序號\");\nValue1 = GetField(\"SeqNo\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "當日的第幾筆成交。數值從1開始。"
+  },
+  {
+    "name": "資金流向",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%87%E9%87%91%E6%B5%81%E5%90%91&group=TVOLUME",
+    "head_description": "成交值占對應大盤的成交比重(％)。單位是%，例如數值是5.6％的話，則回傳5.6。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"資金流向\");\nValue1 = GetField(\"CashDirect\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "%",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "類股指數"
+    ],
+    "description": "成交值占對應大盤的成交比重(％)。\n單位是%，例如數值是5.6％的話，則回傳5.6。支援台股以及類股指數，計算公式是成交值／對應大盤成交值＊100％。"
+  },
+  {
+    "name": "盤後量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%9B%A4%E5%BE%8C%E9%87%8F&group=TVOLUME",
+    "head_description": "盤後定價交易區間的整股成交張數(不含鉅額交易量)",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"盤後量\");\nValue1 = GetField(\"OffHourVolume\");\nValue1 = GetField(\"盤後整股成交量\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "盤後定價交易區間的整股成交張數(不含鉅額交易量)"
+  },
+  {
+    "name": "賣出大單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%A4%A7%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "賣出大單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出大單成交次數\");\nValue1 = GetField(\"AskTickCount_L\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出大單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出大單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%A4%A7%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "賣出大單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出大單金額\");\nValue1 = GetField(\"AskVolumePrice_L\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出大單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出大單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%A4%A7%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "賣出大單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出大單量\");\nValue1 = GetField(\"AskVolume_L\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出大單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出小單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%B0%8F%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "賣出小單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出小單成交次數\");\nValue1 = GetField(\"AskTickCount_S\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出小單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出小單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%B0%8F%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "賣出小單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出小單金額\");\nValue1 = GetField(\"AskVolumePrice_S\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出小單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出小單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%B0%8F%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "賣出小單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出小單量\");\nValue1 = GetField(\"AskVolume_S\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出小單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出中單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E4%B8%AD%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "賣出中單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出中單成交次數\");\nValue1 = GetField(\"AskTickCount_M\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出中單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出中單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E4%B8%AD%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "賣出中單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出中單金額\");\nValue1 = GetField(\"AskVolumePrice_M\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出中單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出中單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E4%B8%AD%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "賣出中單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出中單量\");\nValue1 = GetField(\"AskVolume_M\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出中單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出特大單成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E7%89%B9%E5%A4%A7%E5%96%AE%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "賣出特大單的成交次數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出特大單成交次數\");\nValue1 = GetField(\"AskTickCount_XL\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "次",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出特大單的成交次數。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出特大單金額",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E7%89%B9%E5%A4%A7%E5%96%AE%E9%87%91%E9%A1%8D&group=TVOLUME",
+    "head_description": "賣出特大單的成交金額。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出特大單金額\");\nValue1 = GetField(\"AskVolumePrice_XL\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出特大單的成交金額。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "賣出特大單量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E7%89%B9%E5%A4%A7%E5%96%AE%E9%87%8F&group=TVOLUME",
+    "head_description": "賣出特大單的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出特大單量\");\nValue1 = GetField(\"AskVolume_XL\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "張",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "賣出特大單的成交量。系統依照商品每筆成交的價格以及成交金額，判斷這筆成交是小單，中單，大單，或是特大單。如果是外盤成交，則為買進，內盤成交的話則為賣出。詳細的定義請參考：https://www.xq.com.tw/台股逐筆功能行情端相關異動/。欄位支援分鐘頻率(該分鐘區間的累計)，以及日頻率(當日開盤迄今的累計)。如果是指數型商品的話，數值則是成分股的累計。資料從2020年開始提供。"
+  },
+  {
+    "name": "總成交次數",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%B8%BD%E6%88%90%E4%BA%A4%E6%AC%A1%E6%95%B8&group=TVOLUME",
+    "head_description": "成交的總筆數。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"總成交次數\");\nValue1 = GetField(\"TotalTicks\");\n",
+    "field_category": [
+      "量能"
+    ],
+    "unit": "筆",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "成交的總筆數。資料來源為交易所盤中所傳送的成交明細的筆數。如果分鐘頻率的話則為該分鐘統計區間內的成交明細筆數。"
+  }
+]

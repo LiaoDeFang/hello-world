@@ -1,0 +1,401 @@
+[
+  {
+    "name": "內盤量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%85%A7%E7%9B%A4%E9%87%8F&group=TOFTEN",
+    "head_description": "這一筆K棒的所有成交內標記為內盤成交的加總數量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"內盤量\");\nValue1 = GetField(\"TradeVolumeAtBid\");\nValue1 = GetField(\"內盤金額\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "台股:張；大盤/指數:元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "這一筆K棒的所有成交內標記為內盤成交的加總數量。系統會依照成交發生當時委託簿的最佳委買價格以及最佳委賣價格來判斷此筆是外盤成交或是內盤成交。如果成交的價格貼近委買價格的話，則標示為內盤成交，一般會視為主動「賣出」。如果是指數類型商品的話，則是比前一價下跌的所有成交量的加總。"
+  },
+  {
+    "name": "日期",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%97%A5%E6%9C%9F&group=TOFTEN",
+    "head_description": "K棒資料的日期。格式為西元年月日，例如20221101。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"日期\");\nValue1 = GetField(\"Date\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的日期。欄位格式為西元年月日，例如20221101。語法上也可以使用Date來取得同樣的數值。"
+  },
+  {
+    "name": "外盤量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%A4%96%E7%9B%A4%E9%87%8F&group=TOFTEN",
+    "head_description": "這一筆K棒的所有成交內被標記為外盤成交的加總數量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"外盤量\");\nValue1 = GetField(\"TradeVolumeAtAsk\");\nValue1 = GetField(\"外盤金額\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "台股:張；大盤/指數:元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "這一筆K棒的所有成交內被標記為外盤成交的加總數量。系統會依照成交發生當時委託簿的最佳委買價格以及最佳委賣價格來判斷此筆是外盤成交或是內盤成交。如果成交的價格貼近委賣價格的話，則標示為外盤成交，一般會視為主動「買進」。如果是指數類型商品的話，則是比前一價上漲的所有成交量的加總。"
+  },
+  {
+    "name": "成交金額(元)",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%88%90%E4%BA%A4%E9%87%91%E9%A1%8D%28%E5%85%83%29&group=TOFTEN",
+    "head_description": "成交的加總金額。",
+    "rank": "元",
+    "code": "Value1 = GetField(\"成交金額(元)\");\nValue1 = GetField(\"TradeValue\");\nValue1 = GetField(\"成交金額\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "香港股票",
+      "大陸股票",
+      "美(股票)"
+    ],
+    "description": "成交的加總金額。如果是個股的話，計算方式是統計每筆成交數量乘上成交價。如果是大盤或是指數型商品的話，此欄位與成交量是相同的。數值依照統計區間而易，如果是分鐘頻率的話，則是該分鐘統計區間的每筆成交金額的加總，如果是週月以上的話則是每日成交金額的加總。"
+  },
+  {
+    "name": "成交量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%88%90%E4%BA%A4%E9%87%8F&group=TOFTEN",
+    "head_description": "K棒資料的成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"成交量\");\nValue1 = GetField(\"Volume\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "台股:張；大盤/類股:元；期貨/選擇權:口；其他市場股票:股",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的成交量。數值單位依照商品類型而異，例如台股的話成交量的單位是張，可是美股的話成交量的單位則是股。語法上也可以使用Volume來取得同樣的數值。"
+  },
+  {
+    "name": "收盤價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%94%B6%E7%9B%A4%E5%83%B9&group=TOFTEN",
+    "head_description": "K棒資料的收盤價(最後一個成交價位)。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"收盤價\");\nValue1 = GetField(\"Close\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的收盤價(最後一個成交價位)。語法上也可以使用Close來取得同樣的數值。"
+  },
+  {
+    "name": "估計量",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%BC%B0%E8%A8%88%E9%87%8F&group=TOFTEN",
+    "head_description": "當日收盤的預估成交量。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"估計量\");\nValue1 = GetField(\"EstimateVolume\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "個股:張，大盤:元，類股:元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "大盤",
+      "類股指數",
+      "台(股票)"
+    ],
+    "description": "當日收盤的預估成交量。大盤或是個股的估計的方式是統計過去一段時間內每日盤中的分鐘累計成交量，算出每分鐘成交量的分佈比例，然後依照當日開盤迄今的累計成交量，來推算收盤時可能的成交量。類股商品（細產業指標、主題指標）的計算方式為成分股預估量乘以均價的加總。"
+  },
+  {
+    "name": "均價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%9D%87%E5%83%B9&group=TOFTEN",
+    "head_description": "每日的平均成交價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"均價\");\nValue1 = GetField(\"AvgPrice\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股",
+      "大盤",
+      "類股指數",
+      "期貨",
+      "選擇權",
+      "香港股票",
+      "大陸股票"
+    ],
+    "description": "每日的平均成交價。計算方式是累加每日開盤後每筆成交的價格乘上數量，然後除以累計的成交數量，得出當日平均的成交價。如果是分鐘頻率的話，數值為開盤到現在為止的成交均價。如果是日頻率的話則是當日的成交均價。"
+  },
+  {
+    "name": "時間",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%99%82%E9%96%93&group=TOFTEN",
+    "head_description": "K棒資料的時間(時分秒)。格式是hhmmss的6位數字，例如103000代表10點30分0秒。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"時間\");\nValue1 = GetField(\"Time\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的時間(時分秒)。格式是hhmmss的6位數字，例如103000代表10點30分0秒。時間採用24小時制，所以時間如果是下午1點20分30秒則會回傳132030。如果頻率是日線以上的話，時間欄位會回傳0。語法上也可以使用Time來取得同樣的數值。"
+  },
+  {
+    "name": "參考價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%8F%83%E8%80%83%E5%83%B9&group=TOFTEN",
+    "head_description": "當日交易的參考價。一般而言是前一交易日的收盤價，如果股票商品有除權息的話，則是除權息後的參考價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"參考價\");\nValue1 = GetField(\"RefPrice\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日交易的參考價。一般而言是前一交易日的收盤價，如果股票商品有除權息的話，則是除權息後的參考價。除權息的計算公式如下(實際數值以交易所公佈為主)：\n1.除息參考價為股價－股息\n2.除權參考價為股價／(1+配股率)\n3.同時除權息參考價為 (股價-股息)／(1+配股率)"
+  },
+  {
+    "name": "最低價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E4%BD%8E%E5%83%B9&group=TOFTEN",
+    "head_description": "K棒資料的最低成交價位。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"最低價\");\nValue1 = GetField(\"Low\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的最低成交價位。語法上也可以使用Low來取得同樣的數值。"
+  },
+  {
+    "name": "最高價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E9%AB%98%E5%83%B9&group=TOFTEN",
+    "head_description": "K棒資料的最高成交價位。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"最高價\");\nValue1 = GetField(\"High\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的最高成交價位。語法上也可以使用High來取得同樣的數值。"
+  },
+  {
+    "name": "買入價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B2%B7%E5%85%A5%E5%83%B9&group=TOFTEN",
+    "head_description": "這一筆成交明細內的「買進」價格。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"買入價\");\nValue1 = GetField(\"BidPrice\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "這一筆成交明細內的「買進」價格。「買進」價格為成交發生當時五檔委託簿的最佳委買價格。"
+  },
+  {
+    "name": "跌停價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B7%8C%E5%81%9C%E5%83%B9&group=TOFTEN",
+    "head_description": "當日的跌停價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"跌停價\");\nValue1 = GetField(\"DownLimit\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日的跌停價。"
+  },
+  {
+    "name": "開盤價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%96%8B%E7%9B%A4%E5%83%B9&group=TOFTEN",
+    "head_description": "K棒資料的開盤價(第一個成交價位)。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"開盤價\");\nValue1 = GetField(\"Open\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "K棒資料的開盤價(第一個成交價位)。語法上也可以使用Open來取得同樣的數值。"
+  },
+  {
+    "name": "漲停價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%BC%B2%E5%81%9C%E5%83%B9&group=TOFTEN",
+    "head_description": "當日的漲停價。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"漲停價\");\nValue1 = GetField(\"UpLimit\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "台股"
+    ],
+    "description": "當日的漲停價。"
+  },
+  {
+    "name": "賣出價",
+    "url": "https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%B3%A3%E5%87%BA%E5%83%B9&group=TOFTEN",
+    "head_description": "這一筆成交明細內的「賣出」價格。",
+    "rank": "資料欄位",
+    "code": "Value1 = GetField(\"賣出價\");\nValue1 = GetField(\"AskPrice\");\n",
+    "field_category": [
+      "常用"
+    ],
+    "unit": "元",
+    "format": "數值",
+    "supported_scripts": [
+      "指標",
+      "警示",
+      "交易",
+      "函數"
+    ],
+    "supported_products": [
+      "全部"
+    ],
+    "description": "這一筆成交明細內的「賣出」價格。「賣出」價格為成交發生當時五檔委託簿的最佳委賣價格。"
+  }
+]
