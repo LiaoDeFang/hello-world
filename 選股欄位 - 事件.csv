@@ -1,0 +1,99 @@
+﻿name,url,head_description,rank,code,field_category,unit,format,supported_scripts,supported_products,description
+下一次董監改選年,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E4%B8%8B%E4%B8%80%E6%AC%A1%E8%91%A3%E7%9B%A3%E6%94%B9%E9%81%B8%E5%B9%B4&group=FEVENT,回傳下一次董監改選年。欄位格式為西元年，例如2016。,選股欄位,"Value1 = GetField(""下一次董監改選年"");
+Value1 = GetField(""NextElectionYearOfBoardOfDirectors"");
+",事件,,數值,選股|函數,台股,回傳下一次董監改選年。欄位格式為西元年，例如2016。
+日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%97%A5%E6%9C%9F&group=FEVENT,K棒資料的日期。格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""日期"");
+Value1 = GetField(""Date"");
+",事件,,數值,選股|函數,全部,K棒資料的日期。欄位格式為西元年月日，例如20221101。語法上也可以使用Date來取得同樣的數值。
+法說會日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B3%95%E8%AA%AA%E6%9C%83%E6%97%A5%E6%9C%9F&group=FEVENT,最新一期法說會日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""法說會日期"");
+Value1 = GetField(""InvestorConferenceDate"");
+",事件,,數值,選股|函數,台股,最新一期法說會日期。欄位格式為西元年月日，例如20221101。資料來源為台灣證券交易所。請注意：目前只紀錄各公司每季財報說明、業績說明會，以及於證交所所舉辦的法說會的日期。其餘如投資機構所邀請的法說會，如投資論壇、投資展望說明會、台股企業日等，則不紀錄於此欄位中。
+股利年度,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E5%88%A9%E5%B9%B4%E5%BA%A6&group=FEVENT,回傳完整的股利年度。欄位格式為西元年，例如2018。,選股欄位,"Value1 = GetField(""股利年度"");
+Value1 = GetField(""DividendYear"");
+",事件,年,數值,選股|函數,台(股票)|美(股票)|美(ETF),回傳完整的股利年度。欄位格式為西元年，例如2018。
+股東會日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%82%A1%E6%9D%B1%E6%9C%83%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次股東會的日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""股東會日期"");
+Value1 = GetField(""DateofMeetingofShareHolders"");
+",事件,,數值,選股|函數,台股,最近一次股東會的日期。欄位格式為西元年月日，例如20221101。
+庫藏股結束日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%BA%AB%E8%97%8F%E8%82%A1%E7%B5%90%E6%9D%9F%E6%97%A5%E6%9C%9F&group=FEVENT,最新一次庫藏股預計買回期間的結束日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""庫藏股結束日期"");
+Value1 = GetField(""Stockenddate"");
+",事件,日期,數值,選股|函數,台股,"最新一次庫藏股預計買回期間的結束日期。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""庫藏股結束日期"")是否等於0來判斷是否有資料。"
+庫藏股開始日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E5%BA%AB%E8%97%8F%E8%82%A1%E9%96%8B%E5%A7%8B%E6%97%A5%E6%9C%9F&group=FEVENT,最新一次庫藏股預計買回期間的開始日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""庫藏股開始日期"");
+Value1 = GetField(""Stockstartdate"");
+",事件,日期,數值,選股|函數,台股,"最新一次庫藏股預計買回期間的開始日期。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""庫藏股開始日期"")是否等於0來判斷是否有資料。"
+除息日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%81%AF%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次公佈的除息日期。欄位格式為西元年月日，例如20150618。,選股欄位,"Value1 = GetField(""除息日期"");
+Value1 = GetField(""ExDividendDate"");
+",事件,,數值,選股|函數,台股|美(股票),"最近一次公佈的除息日期。欄位格式為西元年月日，例如20150618。請注意：這個日期可能是「未來」的日期(例如剛公佈要除息，可是尚未除息)，也可能是「過去」的日期(例如已經除完息，可是尚未公佈下次除息的日期)。可以檢查GetFieldDate(""除息日期"")是否等於0來判斷是否有資料。"
+除息年度,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%81%AF%E5%B9%B4%E5%BA%A6&group=FEVENT,最近一次公佈的除息資料所對應的股息所屬年度。欄位格式為西元年，例如2015。,選股欄位,"Value1 = GetField(""除息年度"");
+Value1 = GetField(""ExDividendYear"");
+",事件,,數值,選股|函數,台(股票)|美(股票),"最近一次公佈的除息資料所對應的股息所屬年度。欄位格式為西元年，例如2015。可以檢查GetFieldDate(""除息年度"")是否等於0來判斷是否有資料。"
+除息值,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%81%AF%E5%80%BC&group=FEVENT,最近一次公佈的除息值。單位為元(每1股配發幾元現金)。,選股欄位,"Value1 = GetField(""除息值"");
+Value1 = GetField(""ExDividendValue"");
+",事件,元,數值,選股|函數,台股|美(股票),"最近一次公佈的除息值。單位為元(每1股配發幾元現金)。例如：如果每股配發0.5元現金的話，則數值為0.5。請注意：這個數值可能是即將除息的數值(例如已經公佈要除息，可是尚未除息)，也可能是過去一次除息的數值(例如已經除息，可是下次除息日尚未確定)。可以檢查GetFieldDate(""除息值"")是否等於0來判斷是否有資料。"
+除權日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%AC%8A%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次公佈的除權日期。欄位格式為西元年月日，例如20150618。,選股欄位,"Value1 = GetField(""除權日期"");
+Value1 = GetField(""ExRightDate"");
+",事件,,數值,選股|函數,台股|美(股票),"最近一次公佈的除權日期。欄位格式為西元年月日，例如20150618。請注意：這個日期可能是「未來」的日期(例如剛公佈要除權，可是尚未除權)，也可能是「過去」的日期(例如已經除完權，可是尚未公佈下次除權的日期)。可以檢查GetFieldDate(""除權日期"")是否等於0來判斷是否有資料。"
+除權年度,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%AC%8A%E5%B9%B4%E5%BA%A6&group=FEVENT,最近一次公佈的除權資料所對應的股利所屬年度。欄位格式為西元年，例如2015。,選股欄位,"Value1 = GetField(""除權年度"");
+Value1 = GetField(""ExRightYear"");
+",事件,,數值,選股|函數,台(股票)|美(股票),"最近一次公佈的除權資料所對應的股利所屬年度。欄位格式為西元年，例如2015。可以檢查GetFieldDate(""除權年度"")是否等於0來判斷是否有資料。"
+除權值,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%AC%8A%E5%80%BC&group=FEVENT,最近一次公佈的除權值。台股的話單位是元(每1股配發幾股股票)，美股的話則是除權(Split)的比例。,選股欄位,"Value1 = GetField(""除權值"");
+Value1 = GetField(""ExRightValue"");
+",事件,元,數值,選股|函數,台股|美(股票),"最近一次公佈的除權值。台股的話單位是元(每1股配發幾股股票)，美股的話則是除權(Split)的比例。舉例而言，在台股，如果每股配發0.5股的話(每1000股配發500股)，那數值是0.5。在美股，如果分割的比例是1:2的話(每1股變成0.5股)，則數值為0.5，如果是2:1的話(每1股變成2股)，則數值為2。請注意：這個數值可能是即將除權的數值(例如已經公佈要除權，可是尚未除權)，也可能是過去一次除權的數值(例如已經除權，可是下次除權日尚未確定)。可以檢查GetFieldDate(""除權值"")是否等於0來判斷是否有資料。"
+除權息日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%AC%8A%E6%81%AF%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次公佈的除權或是除息日期。欄位格式為西元年月日，例如20150618。,選股欄位,"Value1 = GetField(""除權息日期"");
+Value1 = GetField(""ExDividendRightDate"");
+",事件,,數值,選股|函數,台股,"最近一次公佈的除權或是除息日期。欄位格式為西元年月日，例如20150618。如果股票在同一日除權+除息的話，則回傳這個日期，否則則回傳最近一次的除權日期，或是除息日期。請注意：這個日期可能是「未來」的日期(例如剛公佈要除息/除權，可是尚未除息/除權)，也可能是「過去」的日期(例如已經除完息/除完權，可是尚未公佈下次除息/除權的日期)。可以檢查GetFieldDate(""除權息日期"")是否等於0來判斷是否有資料。"
+除權息年度,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%AC%8A%E6%81%AF%E5%B9%B4%E5%BA%A6&group=FEVENT,最近一次公佈的除權或是除息資料所對應的股利或是股息所屬年度。欄位格式為西元年，例如2015。,選股欄位,"Value1 = GetField(""除權息年度"");
+Value1 = GetField(""ExDividendRightYear"");
+",事件,,數值,選股|函數,台(股票),"最近一次公佈的除權或是除息資料所對應的股利或是股息所屬年度。欄位格式為西元年，例如2015。如果股票在同一日除權+除息的話，則回傳這個日期，否則則回傳最近一次的除權年度，或是除息年度。可以檢查GetFieldDate(""除權息年度"")是否等於0來判斷是否有資料。"
+除權息值,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E9%99%A4%E6%AC%8A%E6%81%AF%E5%80%BC&group=FEVENT,最近一次公佈的除權或是除息的數值。如果股票在同一日除權+除息的話，則回傳配發的現金與配發的股票的加總，否則則回傳最近一次的除權值，或是除息值。僅支援台股。,選股欄位,"Value1 = GetField(""除權息值"");
+Value1 = GetField(""ExDividendRightValue"");
+",事件,元,數值,選股|函數,台股,"最近一次公佈的除權或是除息的數值。如果股票在同一日除權+除息的話，則回傳配發的現金與配發的股票的加總，否則則回傳最近一次的除權值，或是除息值。僅支援台股。例如：如果股票同一日除權1元(每1000股配發100股)且除息0.5元的話，則數值為1.5。可以檢查GetFieldDate(""除權息值"")是否等於0來判斷是否有資料。"
+現增比率,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E5%A2%9E%E6%AF%94%E7%8E%87&group=FEVENT,最新一期現金增資內每千股可認購新股的股數。例如：如果每千股可以認購20股的話，則數值為20。,選股欄位,"Value1 = GetField(""現增比率"");
+Value1 = GetField(""RatioofCashIncrement"");
+",事件,股,數值,選股|函數,台股,"最新一期現金增資內每千股可認購新股的股數。例如：如果每千股可以認購20股的話，則數值為20。可以檢查GetFieldDate(""現增比率"")是否等於0來判斷是否有現金增資的資料。"
+現增金額,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E5%A2%9E%E9%87%91%E9%A1%8D&group=FEVENT,最新一期現金增資的發行總金額。,選股欄位,"Value1 = GetField(""現增金額"");
+Value1 = GetField(""PriceofCashIncrement"");
+",事件,億,數值,選股|函數,台股,"最新一期現金增資的發行總金額。可以檢查GetFieldDate(""現增金額"")是否等於0來判斷是否有現金增資的資料。"
+現增最後過戶日,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E5%A2%9E%E6%9C%80%E5%BE%8C%E9%81%8E%E6%88%B6%E6%97%A5&group=FEVENT,最近一次現金增資的最後過戶日。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""現增最後過戶日"");
+Value1 = GetField(""LastTransferDayOfCashIncrement"");
+",事件,,數值,選股|函數,台股,"最近一次現金增資的最後過戶日。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""現增最後過戶日"")是否等於0來判斷是否有現金增資的資料。"
+現增新股上市日,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E5%A2%9E%E6%96%B0%E8%82%A1%E4%B8%8A%E5%B8%82%E6%97%A5&group=FEVENT,最近一次現金增資的新股上市日。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""現增新股上市日"");
+Value1 = GetField(""LaunchDayOfNewSharesCashIncrement"");
+",事件,,數值,選股|函數,台股,"最近一次現金增資的新股上市日。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""現增新股上市日"")是否等於0來判斷是否有現金增資的資料。"
+現增價格,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E5%A2%9E%E5%83%B9%E6%A0%BC&group=FEVENT,最新一期現金增資的發行價格。,選股欄位,"Value1 = GetField(""現增價格"");
+Value1 = GetField(""CashIncrementAmount"");
+",事件,元,數值,選股|函數,台股,"最新一期現金增資的發行價格。可以檢查GetFieldDate(""現增價格"")是否等於0來判斷是否有現金增資的資料。"
+現增繳款日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E7%8F%BE%E5%A2%9E%E7%B9%B3%E6%AC%BE%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次現金增資的最後繳款日。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""現增繳款日期"");
+Value1 = GetField(""DateofCashIncrement"");
+",事件,,數值,選股|函數,台股,"最近一次現金增資的最後繳款日。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""現增繳款日期"")是否等於0來判斷是否有現金增資的資料。"
+處置結束日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%99%95%E7%BD%AE%E7%B5%90%E6%9D%9F%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次處置期間的結束日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""處置結束日期"");
+Value1 = GetField(""DispositionED"");
+",事件,,數值,選股|函數,台股|台(權證)|台(可轉債)|台(特別股),"最近一次處置期間的結束日期。欄位格式為西元年月日，例如20221101。請注意：這個日期可能是「未來」的日期(例如已經進入處置期間，可是尚未結束)，也可能是「過去」的日期(例如已經結束處置)。可以檢查GetFieldDate(""處置結束日期"")是否等於0來判斷是否有資料。"
+處置開始日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%99%95%E7%BD%AE%E9%96%8B%E5%A7%8B%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次處置期間的開始日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""處置開始日期"");
+Value1 = GetField(""DispositionSD"");
+",事件,,數值,選股|函數,台股|台(權證)|台(可轉債)|台(特別股),"最近一次處置期間的開始日期。欄位格式為西元年月日，例如20221101。請注意：這個日期可能是「未來」的日期(例如剛公佈處置，可是尚未進入處置期間)，也可能是「過去」的日期(例如已經進入處置，或是已經結束處置)。可以檢查GetFieldDate(""處置開始日期"")是否等於0來判斷是否有資料。"
+最後過戶日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%9C%80%E5%BE%8C%E9%81%8E%E6%88%B6%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次除權息最後過戶日的日期。欄位格式為西元年月日，例如20230618。,選股欄位,"Value1 = GetField(""最後過戶日期"");
+Value1 = GetField(""LastTransferDay"");
+",事件,,數值,選股|函數,台股,"最新一期的除權息最後過戶日日期，以西元年月日來表示，當日期為2023年6月18日，回傳值為20230618。
+會依計算日期取得最新的除權息最後過戶日期。
+資料來源：TEJ台灣經濟新報。"
+減資日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B8%9B%E8%B3%87%E6%97%A5%E6%9C%9F&group=FEVENT,最近一次減資日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""減資日期"");
+Value1 = GetField(""CapitalReductionDate"");
+",事件,,數值,選股|函數,台股,"最近一次減資日期日期。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""減資日期"")是否等於0來判斷是否有減資的資料。"
+減資比例,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B8%9B%E8%B3%87%E6%AF%94%E4%BE%8B&group=FEVENT,最近一次減資的比例。單位是％，例如20代表減資20%。,選股欄位,"Value1 = GetField(""減資比例"");
+Value1 = GetField(""CapitalReductionRatio"");
+",事件,%,數值,選股|函數,台股,"最近一次減資的比例。單位是％，例如20代表減資20%。可以檢查GetFieldDate(""減資比例"")是否等於0來判斷是否有減資的資料。"
+減資最後過戶日,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B8%9B%E8%B3%87%E6%9C%80%E5%BE%8C%E9%81%8E%E6%88%B6%E6%97%A5&group=FEVENT,最近一次減資的最後過戶日。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""減資最後過戶日"");
+Value1 = GetField(""LastTransferDateOfCapitalReduction"");
+",事件,,數值,選股|函數,台股,"最近一次減資的最後過戶日。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""減資最後過戶日"")是否等於0來判斷是否有減資的資料。"
+減資新股上市日,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%B8%9B%E8%B3%87%E6%96%B0%E8%82%A1%E4%B8%8A%E5%B8%82%E6%97%A5&group=FEVENT,最近一次減資的新股上市日。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""減資新股上市日"");
+Value1 = GetField(""LaunchDayOfCapitalReduction"");
+",事件,,數值,選股|函數,台股,"最近一次減資的新股上市日。欄位格式為西元年月日，例如20221101。可以檢查GetFieldDate(""減資新股上市日"")是否等於0來判斷是否有減資的資料。"
+新股上市日,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E6%96%B0%E8%82%A1%E4%B8%8A%E5%B8%82%E6%97%A5&group=FEVENT,最近一次新股上市日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""新股上市日"");
+Value1 = GetField(""LaunchDayOfNewShares"");
+",事件,,數值,選股|函數,台股,最近一次新股上市日期。欄位格式為西元年月日，例如20221101。系統依照最近一次公布的股東會，除權，現增，或是減資，回傳最接近的新股上市日。
+董監事就任日期,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%91%A3%E7%9B%A3%E4%BA%8B%E5%B0%B1%E4%BB%BB%E6%97%A5%E6%9C%9F&group=FEVENT,最新一期董監事就任日期。欄位格式為西元年月日，例如20100101。,選股欄位,"Value1 = GetField(""董監事就任日期"");
+Value1 = GetField(""DateOfBoardOfDirectorInaugurate"");
+",事件,,數值,選股|函數,台股,最新一期董監事就任日期。欄位格式為西元年月日，例如20100101。
+融券最後回補日,https://xshelp.xq.com.tw/XSHelp/?HelpName=%E8%9E%8D%E5%88%B8%E6%9C%80%E5%BE%8C%E5%9B%9E%E8%A3%9C%E6%97%A5&group=FEVENT,最近一次融券最後回補日的日期。欄位格式為西元年月日，例如20221101。,選股欄位,"Value1 = GetField(""融券最後回補日"");
+Value1 = GetField(""ShortSaleFinalRecallDate"");
+",事件,,數值,選股|函數,台股,最近一次融券最後回補日的日期。欄位格式為西元年月日，例如20221101。系統依照最近一次公布的股東會，除權息，現增，或是減資，回傳最接近的融券最後回補日。
